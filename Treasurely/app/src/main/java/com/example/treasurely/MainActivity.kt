@@ -6,23 +6,30 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.AddCircle
+import androidx.compose.material.icons.filled.AccountCircle
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material3.*
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import com.example.treasurely.ui.theme.TreasurelyTheme
-import kotlinx.coroutines.launch
 
 
 class MainActivity : ComponentActivity() {
@@ -32,28 +39,33 @@ class MainActivity : ComponentActivity() {
         setContent {
             TreasurelyTheme {
 
-                var selectedScreen by remember { mutableIntStateOf(0) }
+                val navController = rememberNavController()
 
                 Scaffold(
-                    bottomBar = { NavBar(selectedScreen) { selectedScreen = it } }
+                    bottomBar = { NavBar(navController) }
                 )
                 {
-                    innerPadding -> Box(
+                        innerPadding -> Box(
 
-                        modifier = Modifier
-                            .fillMaxSize()
-                            .padding(innerPadding),
-                        contentAlignment = Alignment.Center
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(innerPadding),
+                    contentAlignment = Alignment.Center
+                )
+                {
+                    NavHost(
+                        navController = navController,
+                        startDestination = "dashboard"
                     )
                     {
-                        when (selectedScreen) {
-                            0 -> Dashboard()
-                            1 -> QRCodeScanner()
-                            2 -> ClueList()
-                            3 -> JoinTreasureHunt()
-                            4 -> CreateTreasureHunt()
-                        }
+                        composable("dashboard") { Dashboard(navController) }
+                        composable("qrscanner") { QRCodeScanner(navController) }
+                        composable("clues") { ClueList(navController) }
+                        composable("join_hunt") { JoinTreasureHunt(navController) }
+                        composable("create_hunt") { CreateTreasureHunt(navController) }
+                        composable("user_profile") { UserProfile(navController) }
                     }
+                }
                 }
             }
         }
@@ -62,58 +74,51 @@ class MainActivity : ComponentActivity() {
 
 
 @Composable
-fun NavBar(selectedScreen: Int, onSelect: (Int) -> Unit) {
-
-    val context = LocalContext.current
+fun NavBar(navController: NavController) {
 
     NavigationBar {
 
         NavigationBarItem(
             icon = { Icon(painter = painterResource(id = R.drawable.outline_qr_code_scanner_24), contentDescription = "Scan QR Code", modifier = Modifier.size(32.dp)) },
-            selected = selectedScreen  == 1,
+            selected = false,
             onClick = {
-                onSelect(1)
-                Toast.makeText(context, "Hey There!", Toast.LENGTH_SHORT).show()
+                navController.navigate("qrscanner")
 
             }
         )
 
         NavigationBarItem(
             icon = { Icon(painter = painterResource(id = R.drawable.baseline_question_mark_24), contentDescription = "Clues", modifier = Modifier.size(32.dp)) },
-            selected = selectedScreen  == 2,
+            selected = false,
             onClick = {
-                onSelect(2)
-                Toast.makeText(context, "Hey There!", Toast.LENGTH_SHORT).show()
+                navController.navigate("clues")
 
             }
         )
 
         NavigationBarItem(
             icon = { Icon(Icons.Default.Home, contentDescription = "Dashboard", modifier = Modifier.size(32.dp)) },
-            selected = selectedScreen  == 0,
+            selected = false,
             onClick = {
-                onSelect(0)
-                Toast.makeText(context, "Hey There!", Toast.LENGTH_SHORT).show()
+                navController.navigate("dashboard")
 
             }
         )
 
         NavigationBarItem(
             icon = { Icon(painter = painterResource(id = R.drawable.outline_group_24), contentDescription = "Join Treasure Hunt", modifier = Modifier.size(32.dp)) },
-            selected = selectedScreen  == 3,
+            selected = false,
             onClick = {
-                onSelect(3)
-                Toast.makeText(context, "Hey There!", Toast.LENGTH_SHORT).show()
+                navController.navigate("join_hunt")
 
             }
         )
 
         NavigationBarItem(
-            icon = { Icon(Icons.Default.AddCircle, contentDescription = "Create Treasure Hunt", modifier = Modifier.size(32.dp)) },
-            selected = selectedScreen  == 4,
+            icon = { Icon(Icons.Default.AccountCircle, contentDescription = "User Profile", modifier = Modifier.size(32.dp)) },
+            selected = false,
             onClick = {
-                onSelect(4)
-                Toast.makeText(context, "Hey There!", Toast.LENGTH_SHORT).show()
+                navController.navigate("user_profile")
 
             }
         )
@@ -122,7 +127,8 @@ fun NavBar(selectedScreen: Int, onSelect: (Int) -> Unit) {
 
 
 @Composable
-fun QRCodeScanner() {
+fun QRCodeScanner(navController: NavController) {
+
     val context = LocalContext.current
 
     Box(modifier = Modifier.fillMaxSize()) {
@@ -147,7 +153,11 @@ fun QRCodeScanner() {
                 .padding(bottom = 16.dp)
                 .width(160.dp),
 
-            onClick = { Toast.makeText(context, "Scanning...", Toast.LENGTH_SHORT).show() }
+            onClick = {
+                Toast.makeText(context, "You Found A Clue!", Toast.LENGTH_LONG).show()
+                navController.navigate("clues")
+
+            }
         )
         {
             Text("Scan", fontSize = 20.sp)
@@ -157,24 +167,90 @@ fun QRCodeScanner() {
 
 
 @Composable
-fun ClueList() {
+fun ClueList(navController: NavController) {
 
-    Text("Clue List")
+    val foundClues = listOf(
+        "Clue 1",
+        "Clue 2",
+        "Clue 3",
+        "Clue 4",
+    )
 }
 
 
-/*
-* The dashboard should contain:
-*   - Any active treasure hunts the user is a part of
-*/
 @Composable
-fun Dashboard() {
-    val hunts = listOf(
-        "Casa Loma Campus Hunt",
-        "TTC Subway Treasure Hunt",
+fun Dashboard(navController: NavController) {
+
+    val activeHunts = listOf(
+        "Treasure Hunt 1",
+        "Treasure Hunt 2",
+        "Treasure Hunt 3",
+        "Treasure Hunt 4",
     )
 
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+    )
+    {
 
+        Column {
+
+            Text(
+                text = "My Treasure Hunts",
+                style = MaterialTheme.typography.headlineLarge,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(bottom = 16.dp)
+            )
+
+            LazyColumn(modifier = Modifier.fillMaxSize().padding(horizontal = 12.dp)) {
+
+                items(activeHunts) { hunt ->
+
+                    Text(
+                        text = hunt,
+                        fontSize = 18.sp,
+                        fontWeight = FontWeight.Medium,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(0.dp,8.dp)
+                            .clickable{ navController.navigate("clues") }
+
+                    )
+
+                    HorizontalDivider(
+                        thickness = 1.dp,
+                        color = Color.LightGray
+                    )
+                }
+            }
+
+            Spacer(modifier = Modifier.size(8.dp))
+
+        }
+
+        Row(
+            modifier = Modifier
+                .align(Alignment.BottomCenter)
+                .fillMaxWidth()
+                .background(MaterialTheme.colorScheme.surface)
+                .padding(vertical = 8.dp),
+            horizontalArrangement = Arrangement.SpaceEvenly
+        )
+        {
+            Button(
+                onClick = { navController.navigate("join_hunt") },
+                modifier = Modifier.weight(1f).padding(horizontal = 8.dp)
+            ) { Text("Join Hunt") }
+
+            Button(
+                onClick = { navController.navigate("create_hunt") },
+                modifier = Modifier.weight(1f).padding(horizontal = 8.dp)
+            ) { Text("Create Hunt") }
+
+        }
+    }
 }
 
 
@@ -184,14 +260,21 @@ fun Dashboard() {
 *   - A submit button that if correct, transfers you to the dashboard
 */
 @Composable
-fun JoinTreasureHunt() {
+fun JoinTreasureHunt(navController: NavController) {
 
     Text("Join Treasure Hunt")
 }
 
 
 @Composable
-fun CreateTreasureHunt() {
+fun CreateTreasureHunt(navController: NavController) {
 
     Text("Create Treasure Hunt")
+}
+
+
+@Composable
+fun UserProfile(navController: NavController) {
+
+    Text("User Profile")
 }
