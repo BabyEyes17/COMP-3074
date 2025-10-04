@@ -256,8 +256,8 @@ fun Dashboard(navController: NavController) {
 
 /*
 * The join screen should contain:
-*   - An input box for a 6 digit code (corresponds with a specific hunt)
-*   - A submit button that if correct, transfers you to the dashboard
+*   - An input box for a 6 digit code
+*   - A submit button that transfers you to the dashboard
 */
 @Composable
 fun JoinTreasureHunt(navController: NavController) {
@@ -266,6 +266,35 @@ fun JoinTreasureHunt(navController: NavController) {
 }
 
 
+/*
+* The create screen should contain:
+*
+*   - Input fields for:
+*       + treasure hunt name
+*       + description
+*       + starting point (address, GPS coordinates, "start anywhere" toggle)
+*       + search radius (minimum of farthest clue location)
+*       + start datetime
+*       + end datetime
+*       + reward (for the user with the most points)
+*       + cover image (optional)
+*
+*   - A clue create button
+*
+*   - Input fields for:
+*       + clue name
+*       + clue description
+*       + location (GPS coordinates)
+*       + points reward (automatically decreased depending on how many user's have found the clue)
+*       + photo upload (optional)
+*       + next clue (optional)
+*       + next clue hint (optional)
+*       + display next clue image (optional toggle)
+*
+*   - Each clue should have an automatically created printable QR code that would be placed at each clue location
+*
+*   - A submit button that transfers you to the dashboard
+*/
 @Composable
 fun CreateTreasureHunt(navController: NavController) {
 
