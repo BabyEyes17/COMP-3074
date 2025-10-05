@@ -1,18 +1,10 @@
 package com.example.treasurely
 
+import com.example.treasurely.R
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Button
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
@@ -21,6 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -29,27 +22,20 @@ import androidx.navigation.NavController
 @Composable
 fun Dashboard(navController: NavController) {
 
-    val activeHunts = listOf(
-        "Treasure Hunt 1",
-        "Treasure Hunt 2",
-        "Treasure Hunt 3",
-        "Treasure Hunt 4",
-    )
-
     Box(
-        modifier = Modifier
-            .fillMaxSize()
+        modifier = Modifier.fillMaxSize()
     )
     {
 
-        Column {
+        Column(
+            modifier = Modifier.fillMaxSize().padding(bottom = 72.dp)
+        )
+        {
 
             Text(
                 text = "My Treasure Hunts",
                 style = MaterialTheme.typography.headlineLarge,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(bottom = 16.dp)
+                modifier = Modifier.fillMaxWidth().padding(bottom = 16.dp, start = 16.dp)
             )
 
             Row(
@@ -60,23 +46,74 @@ fun Dashboard(navController: NavController) {
                 horizontalArrangement = Arrangement.SpaceEvenly
             )
             {
-                Text(text = "250 Points")
-                Text(text = "Total Clues Found: 12")
+                Text(text = "85 Points")
+                Text(text = "Total Clues Found: 2")
             }
 
-            LazyColumn(modifier = Modifier.fillMaxSize().padding(horizontal = 12.dp)) {
+            Spacer(modifier = Modifier.height(24.dp))
 
-                items(activeHunts) { hunt ->
+            Text(
+                text = "Active Treasure Hunt",
+                style = MaterialTheme.typography.titleMedium.copy(fontWeight = FontWeight.Bold),
+                modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
+            )
 
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(16.dp)
+                    .clickable { navController.navigate("treasure_hunt_details") }
+            )
+            {
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Image(
+                        painter = painterResource(id = R.drawable.gbc_logo),
+                        contentDescription = "Campus Quest Logo",
+                        modifier = Modifier.size(48.dp).padding(end = 8.dp)
+                    )
+
+                    Column {
+                        Text(
+                            text = "Campus Quest",
+                            fontSize = 20.sp,
+                            fontWeight = FontWeight.Bold
+                        )
+
+                        Text(
+                            text = "Explore the campus and uncover its secrets!",
+                            fontSize = 14.sp,
+                            color = Color.Gray,
+                            modifier = Modifier.padding(top = 2.dp)
+                        )
+                    }
+                }
+
+                HorizontalDivider(
+                    thickness = 1.dp,
+                    color = Color.LightGray,
+                    modifier = Modifier.padding(top = 8.dp)
+                )
+            }
+
+            Spacer(modifier = Modifier.height(24.dp))
+
+            Text(
+                text = "Other Treasure Hunts",
+                style = MaterialTheme.typography.titleMedium.copy(fontWeight = FontWeight.Bold),
+                modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
+            )
+
+            Column(modifier = Modifier.padding(horizontal = 16.dp)) {
+                listOf(
+                    "Treasure Hunt 1",
+                    "Treasure Hunt 2",
+                    "Treasure Hunt 3"
+                ).forEach { hunt ->
                     Text(
                         text = hunt,
-                        fontSize = 18.sp,
+                        fontSize = 16.sp,
                         fontWeight = FontWeight.Medium,
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(0.dp,8.dp)
-                            .clickable{ navController.navigate("clues") }
-
+                        modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp)
                     )
 
                     HorizontalDivider(
@@ -85,9 +122,6 @@ fun Dashboard(navController: NavController) {
                     )
                 }
             }
-
-            Spacer(modifier = Modifier.size(8.dp))
-
         }
 
         Row(
@@ -102,13 +136,20 @@ fun Dashboard(navController: NavController) {
             Button(
                 onClick = { navController.navigate("join_hunt") },
                 modifier = Modifier.weight(1f).padding(horizontal = 8.dp)
-            ) { Text("Join Hunt") }
+            )
+            {
+                Text("Join Hunt")
+            }
 
             Button(
                 onClick = { navController.navigate("create_hunt") },
-                modifier = Modifier.weight(1f).padding(horizontal = 8.dp)
-            ) { Text("Create Hunt") }
-
+                modifier = Modifier
+                    .weight(1f)
+                    .padding(horizontal = 8.dp)
+            )
+            {
+                Text("Create Hunt")
+            }
         }
     }
 }

@@ -55,10 +55,7 @@ import androidx.navigation.NavController
 fun CreateTreasureHunt(navController: NavController) {
 
     Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .verticalScroll(rememberScrollState())
-            .padding(16.dp)
+        modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp)
     )
     {
 
@@ -71,11 +68,9 @@ fun CreateTreasureHunt(navController: NavController) {
                 .padding(vertical = 12.dp),
         )
 
-        /* Treasure Hunt Details */
+
         Card(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(vertical = 8.dp),
+            modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp),
             elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
             colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)
         )
@@ -91,26 +86,29 @@ fun CreateTreasureHunt(navController: NavController) {
 
                 OutlinedTextField(value = "", onValueChange = {}, label = { Text("Treasure Hunt Name") })
                 Spacer(Modifier.height(8.dp))
+
                 OutlinedTextField(value = "", onValueChange = {}, label = { Text("Description") })
                 Spacer(Modifier.height(8.dp))
+
                 OutlinedTextField(value = "", onValueChange = {}, label = { Text("Starting Point (Address / GPS)") })
                 Spacer(Modifier.height(8.dp))
+
                 OutlinedTextField(value = "", onValueChange = {}, label = { Text("Search Radius (km)") })
                 Spacer(Modifier.height(8.dp))
+
                 OutlinedTextField(value = "", onValueChange = {}, label = { Text("Start Date & Time") })
                 Spacer(Modifier.height(8.dp))
+
                 OutlinedTextField(value = "", onValueChange = {}, label = { Text("End Date & Time") })
                 Spacer(Modifier.height(8.dp))
+
                 OutlinedTextField(value = "", onValueChange = {}, label = { Text("Reward") })
             }
         }
 
 
-        /* Clue Details */
         Card(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(vertical = 8.dp),
+            modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp),
             elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
             colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)
         )
@@ -126,23 +124,26 @@ fun CreateTreasureHunt(navController: NavController) {
 
                 OutlinedTextField(value = "", onValueChange = {}, label = { Text("Clue Name") })
                 Spacer(Modifier.height(8.dp))
+
                 OutlinedTextField(value = "", onValueChange = {}, label = { Text("Clue Description") })
                 Spacer(Modifier.height(8.dp))
+
                 OutlinedTextField(value = "", onValueChange = {}, label = { Text("Clue Location (GPS)") })
                 Spacer(Modifier.height(8.dp))
+
                 OutlinedTextField(value = "", onValueChange = {}, label = { Text("Points Reward") })
                 Spacer(Modifier.height(8.dp))
+
                 OutlinedTextField(value = "", onValueChange = {}, label = { Text("Next Clue (optional)") })
                 Spacer(Modifier.height(8.dp))
+
                 OutlinedTextField(value = "", onValueChange = {}, label = { Text("Next Clue Hint (optional)") })
             }
         }
 
 
         Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(vertical = 16.dp),
+            modifier = Modifier.fillMaxWidth().padding(vertical = 16.dp),
             horizontalArrangement = Arrangement.SpaceEvenly
         )
         {
