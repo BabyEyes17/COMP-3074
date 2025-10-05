@@ -55,15 +55,19 @@ class MainActivity : ComponentActivity() {
                 {
                     NavHost(
                         navController = navController,
-                        startDestination = "dashboard"
+                        startDestination = "user_registration"
                     )
                     {
                         composable("dashboard") { Dashboard(navController) }
-                        composable("qrscanner") { QRCodeScanner(navController) }
+                        composable("qr_code_scanner") { QRCodeScanner(navController) }
                         composable("clues") { ClueList(navController) }
                         composable("join_hunt") { JoinTreasureHunt(navController) }
                         composable("create_hunt") { CreateTreasureHunt(navController) }
                         composable("user_profile") { UserProfile(navController) }
+                        composable("user_registration") { UserRegistration(navController) }
+                        composable("user_login") { UserLogin(navController) }
+                        composable("treasure_hunt_details") { TreasureHuntDetails(navController) }
+                        composable("clue_details") { ClueDetails(navController) }
                     }
                 }
                 }
@@ -82,7 +86,7 @@ fun NavBar(navController: NavController) {
             icon = { Icon(painter = painterResource(id = R.drawable.outline_qr_code_scanner_24), contentDescription = "Scan QR Code", modifier = Modifier.size(32.dp)) },
             selected = false,
             onClick = {
-                navController.navigate("qrscanner")
+                navController.navigate("qr_code_scanner")
 
             }
         )
@@ -168,13 +172,57 @@ fun QRCodeScanner(navController: NavController) {
 
 @Composable
 fun ClueList(navController: NavController) {
+    val context = LocalContext.current
 
-    val foundClues = listOf(
-        "Clue 1",
-        "Clue 2",
-        "Clue 3",
-        "Clue 4",
+    val treasureHunts = mapOf(
+        "Hunt 1" to listOf("Clue 1", "Clue 2", "Clue 3"),
+        "Hunt 2" to listOf("Clue 1", "Clue 2", "Clue 3"),
+        "Hunt 3" to listOf("Clue 1", "Clue 2", "Clue 3"),
+        "Hunt 4" to listOf("Clue 1", "Clue 2", "Clue 3")
     )
+
+    LazyColumn(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp)
+    )
+    {
+        treasureHunts.forEach { (huntName, clues) ->
+            item {
+                Text(
+                    text = huntName,
+                    style = MaterialTheme.typography.titleLarge.copy(fontWeight = FontWeight.Bold),
+                    modifier = Modifier.padding(vertical = 8.dp)
+                )
+            }
+
+            items(clues) { clue ->
+                Text(
+                    text = clue,
+                    fontSize = 16.sp,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(start = 16.dp, top = 4.dp, bottom = 4.dp)
+                        .clickable {
+                            Toast
+                                .makeText(context, "Opening $clue...", Toast.LENGTH_SHORT)
+                                .show()
+                        }
+                )
+
+                HorizontalDivider(thickness = 1.dp, color = Color.LightGray)
+            }
+
+            item { Spacer(modifier = Modifier.height(16.dp)) }
+        }
+    }
+}
+
+
+@Composable
+fun ClueDetails(navController: NavController) {
+
+    Text("Clue Details")
 }
 
 
@@ -254,6 +302,13 @@ fun Dashboard(navController: NavController) {
 }
 
 
+@Composable
+fun TreasureHuntDetails(navController: NavController) {
+
+    Text("Treasure Hunt Details")
+}
+
+
 /*
 * The join screen should contain:
 *   - An input box for a 6 digit code
@@ -307,3 +362,18 @@ fun UserProfile(navController: NavController) {
 
     Text("User Profile")
 }
+
+
+@Composable
+fun UserRegistration(navController: NavController) {
+
+    Text("User Registration")
+}
+
+
+@Composable
+fun UserLogin(navController: NavController) {
+
+    Text("User Login")
+}
+
