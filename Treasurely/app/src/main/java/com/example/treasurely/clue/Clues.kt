@@ -83,7 +83,7 @@ fun ClueList(navController: NavController) {
                 {
                     Column(modifier = Modifier.padding(16.dp)) {
 
-                        Text("Clue 2: Library Main Desk", fontSize = 18.sp, fontWeight = FontWeight.Bold)
+                        Text("Library", fontSize = 18.sp, fontWeight = FontWeight.Bold)
                         Spacer(modifier = Modifier.height(6.dp))
 
                         Text("Description: ", color = Color.Gray)

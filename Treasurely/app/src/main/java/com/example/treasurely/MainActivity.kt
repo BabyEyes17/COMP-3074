@@ -6,10 +6,12 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.treasurely.ui.theme.TreasurelyTheme
 
@@ -34,16 +36,16 @@ class MainActivity : ComponentActivity() {
             TreasurelyTheme {
 
                 val navController = rememberNavController()
+                val navBackStackEntry by navController.currentBackStackEntryAsState()
+                val currentRoute = navBackStackEntry?.destination?.route
 
                 Scaffold(
-                    bottomBar = { NavBar(navController) }
+                    bottomBar = { if (currentRoute !in listOf("user_login", "user_registration")) { NavBar(navController) } }
                 )
                 {
                         innerPadding -> Box(
 
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .padding(innerPadding),
+                    modifier = Modifier.fillMaxSize().padding(innerPadding),
                     contentAlignment = Alignment.Center
                 )
                 {
