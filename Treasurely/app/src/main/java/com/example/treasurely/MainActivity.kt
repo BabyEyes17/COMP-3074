@@ -375,5 +375,16 @@ fun UserRegistration(navController: NavController) {
 fun UserLogin(navController: NavController) {
 
     Text("User Login")
+
+    Column {
+
+        TextField(
+            label = "Email"
+        )
+
+        TextField(
+            label = "Password"
+        )
+    }
 }
 
