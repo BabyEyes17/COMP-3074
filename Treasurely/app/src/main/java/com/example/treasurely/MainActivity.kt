@@ -252,6 +252,18 @@ fun Dashboard(navController: NavController) {
                     .padding(bottom = 16.dp)
             )
 
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .background(MaterialTheme.colorScheme.surface)
+                    .padding(vertical = 8.dp),
+                horizontalArrangement = Arrangement.SpaceEvenly
+            )
+            {
+                Text(text = "250 Points")
+                Text(text = "Total Clues Found: 12")
+            }
+
             LazyColumn(modifier = Modifier.fillMaxSize().padding(horizontal = 12.dp)) {
 
                 items(activeHunts) { hunt ->
@@ -367,24 +379,100 @@ fun UserProfile(navController: NavController) {
 @Composable
 fun UserRegistration(navController: NavController) {
 
-    Text("User Registration")
+    /* Temporary just to allow for typing */
+    var email by remember { mutableStateOf("") }
+    var password by remember { mutableStateOf("") }
+    var confirmPassword by remember { mutableStateOf("") }
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(32.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
+    )
+    {
+        Text(
+            text = "Treasurely Registration",
+            style = MaterialTheme.typography.titleLarge.copy(fontWeight = FontWeight.Bold),
+            modifier = Modifier.padding(vertical = 8.dp)
+        )
+
+        TextField(
+            value = email,
+            onValueChange = { email = it },
+            label = { Text("Email") }
+        )
+
+        Spacer(modifier = Modifier.size(8.dp))
+
+        TextField(
+            value = password,
+            onValueChange = { password = it },
+            label = { Text("Password") }
+        )
+
+        Spacer(modifier = Modifier.size(8.dp))
+
+        TextField(
+            value = confirmPassword,
+            onValueChange = { confirmPassword = it },
+            label = { Text("Confirm Password") }
+        )
+
+        Spacer(modifier = Modifier.size(16.dp))
+
+        Button(
+            onClick = { navController.navigate("user_login") },
+            modifier = Modifier.fillMaxWidth(0.5f).padding(horizontal = 8.dp)
+        ) { Text("Login") }
+
+    }
 }
 
 
 @Composable
 fun UserLogin(navController: NavController) {
 
-    Text("User Login")
+    /* Temporary just to allow for typing */
+    var email by remember { mutableStateOf("") }
+    var password by remember { mutableStateOf("") }
 
-    Column {
-
-        TextField(
-            label = "Email"
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(32.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
+    )
+    {
+        Text(
+            text = "Treasurely Login",
+            style = MaterialTheme.typography.titleLarge.copy(fontWeight = FontWeight.Bold),
+            modifier = Modifier.padding(vertical = 8.dp)
         )
 
         TextField(
-            label = "Password"
+            value = email,
+            onValueChange = { email = it },
+            label = { Text("Email") }
         )
+
+        Spacer(modifier = Modifier.size(8.dp))
+
+        TextField(
+            value = password,
+            onValueChange = { password = it },
+            label = { Text("Password") }
+        )
+
+        Spacer(modifier = Modifier.size(16.dp))
+
+        Button(
+            onClick = { navController.navigate("dashboard") },
+            modifier = Modifier.fillMaxWidth(0.5f).padding(horizontal = 8.dp)
+        ) { Text("Login") }
+
     }
 }
 
