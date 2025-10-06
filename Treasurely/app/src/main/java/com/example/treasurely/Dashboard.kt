@@ -1,11 +1,13 @@
 package com.example.treasurely
 
-import com.example.treasurely.R
+import android.widget.Toast
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.Button
+import androidx.compose.material3.Card
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -13,142 +15,209 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import com.example.treasurely.user.StatItem
 
 @Composable
 fun Dashboard(navController: NavController) {
+    val context = LocalContext.current
+    val contentPadding = 16.dp
 
-    Box(
-        modifier = Modifier.fillMaxSize()
-    )
-    {
+    Box(modifier = Modifier.fillMaxSize()) {
+        LazyColumn(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(contentPadding),
+            verticalArrangement = Arrangement.spacedBy(12.dp)
+        ) {
+            item {
+                Text(
+                    text = "My Treasure Hunts",
+                    style = MaterialTheme.typography.headlineLarge,
+                    fontWeight = FontWeight.Bold
+                )
+            }
+
+            item {
+                Card(modifier = Modifier.fillMaxWidth()) {
+                    Column(modifier = Modifier.padding(contentPadding)) {
+                        Text(
+                            text = "Statistics",
+                            style = MaterialTheme.typography.titleLarge,
+                            fontWeight = FontWeight.Bold,
+                            modifier = Modifier.padding(bottom = 12.dp)
+                        )
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.SpaceEvenly
+                        ) {
+                            StatItem("Hunts Joined", "4")
+                            StatItem("Clues Found", "12")
+                            StatItem("Total Points", "1,400")
+                        }
+                    }
+                }
+            }
+
+            item {
+                Text(
+                    text = "Active Hunts",
+                    style = MaterialTheme.typography.titleLarge,
+                    fontWeight = FontWeight.Bold
+                )
+            }
+
+            item {
+                Card(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clickable {
+                            Toast.makeText(context, "Opening Campus Quest...", Toast.LENGTH_SHORT).show()
+                            navController.navigate("treasure_hunt_details")
+                        }
+                ) {
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(contentPadding),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            modifier = Modifier.weight(1f)
+                        ) {
+                            Image(
+                                painter = painterResource(id = R.drawable.gbc_logo),
+                                contentDescription = "Campus Quest Logo",
+                                modifier = Modifier
+                                    .size(48.dp)
+                                    .padding(end = 8.dp)
+                            )
+
+                            Column {
+                                Text(
+                                    text = "Campus Quest",
+                                    style = MaterialTheme.typography.titleMedium,
+                                    fontWeight = FontWeight.Medium
+                                )
+                                Text(
+                                    text = "3/5 clues found",
+                                    style = MaterialTheme.typography.bodySmall,
+                                    color = Color.Gray
+                                )
+                            }
+                        }
+
+                        Text(
+                            text = "500 pts",
+                            style = MaterialTheme.typography.titleMedium,
+                            color = MaterialTheme.colorScheme.primary,
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
+                }
+            }
+
+            item {
+                Text(
+                    text = "Inactive Hunts",
+                    style = MaterialTheme.typography.titleLarge,
+                    fontWeight = FontWeight.Bold
+                )
+            }
+
+            items(3) { index ->
+                Card(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clickable {
+                            Toast.makeText(context, "Opening hunt details...", Toast.LENGTH_SHORT).show()
+                        }
+                ) {
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(contentPadding),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Column(modifier = Modifier.weight(1f)) {
+                            Text(
+                                text = "Treasure Hunt ${index + 1}",
+                                style = MaterialTheme.typography.titleMedium,
+                                fontWeight = FontWeight.Medium
+                            )
+                            Text(
+                                text = "${index + 2}/5 clues found",
+                                style = MaterialTheme.typography.bodySmall,
+                                color = Color.Gray
+                            )
+                        }
+
+                        Text(
+                            text = "${(index + 2) * 100} pts",
+                            style = MaterialTheme.typography.titleMedium,
+                            color = MaterialTheme.colorScheme.primary,
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
+                }
+            }
+        }
 
         Column(
-            modifier = Modifier.fillMaxSize().padding(bottom = 72.dp)
-        )
-        {
-
-            Text(
-                text = "My Treasure Hunts",
-                style = MaterialTheme.typography.headlineLarge,
-                modifier = Modifier.fillMaxWidth().padding(bottom = 16.dp, start = 16.dp)
+            modifier = Modifier
+                .align(Alignment.BottomCenter)
+                .fillMaxWidth()
+                .background(MaterialTheme.colorScheme.surface)
+        ) {
+            HorizontalDivider(
+                thickness = 1.dp,
+                color = Color.LightGray.copy(alpha = 0.4f)
             )
 
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .background(MaterialTheme.colorScheme.surface)
-                    .padding(vertical = 8.dp),
-                horizontalArrangement = Arrangement.SpaceEvenly
-            )
-            {
-                Text(text = "85 Points")
-                Text(text = "Total Clues Found: 2")
-            }
-
-            Spacer(modifier = Modifier.height(24.dp))
-
-            Text(
-                text = "Active Treasure Hunt",
-                style = MaterialTheme.typography.titleMedium.copy(fontWeight = FontWeight.Bold),
-                modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
-            )
-
-            Column(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(16.dp)
-                    .clickable { navController.navigate("treasure_hunt_details") }
-            )
-            {
-                Row(verticalAlignment = Alignment.CenterVertically) {
-                    Image(
-                        painter = painterResource(id = R.drawable.gbc_logo),
-                        contentDescription = "Campus Quest Logo",
-                        modifier = Modifier.size(48.dp).padding(end = 8.dp)
+                    .padding(all = contentPadding),
+                horizontalArrangement = Arrangement.spacedBy(12.dp)
+            ) {
+                Button(
+                    onClick = { navController.navigate("join_hunt") },
+                    modifier = Modifier
+                        .weight(1f)
+                        .height(56.dp),
+                    colors = androidx.compose.material3.ButtonDefaults.buttonColors(
+                        containerColor = MaterialTheme.colorScheme.primaryContainer,
+                        contentColor = MaterialTheme.colorScheme.onPrimaryContainer
                     )
-
-                    Column {
-                        Text(
-                            text = "Campus Quest",
-                            fontSize = 20.sp,
-                            fontWeight = FontWeight.Bold
-                        )
-
-                        Text(
-                            text = "Explore the campus and uncover its secrets!",
-                            fontSize = 14.sp,
-                            color = Color.Gray,
-                            modifier = Modifier.padding(top = 2.dp)
-                        )
-                    }
-                }
-
-                HorizontalDivider(
-                    thickness = 1.dp,
-                    color = Color.LightGray,
-                    modifier = Modifier.padding(top = 8.dp)
-                )
-            }
-
-            Spacer(modifier = Modifier.height(24.dp))
-
-            Text(
-                text = "Other Treasure Hunts",
-                style = MaterialTheme.typography.titleMedium.copy(fontWeight = FontWeight.Bold),
-                modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
-            )
-
-            Column(modifier = Modifier.padding(horizontal = 16.dp)) {
-                listOf(
-                    "Treasure Hunt 1",
-                    "Treasure Hunt 2",
-                    "Treasure Hunt 3"
-                ).forEach { hunt ->
+                ) {
                     Text(
-                        text = hunt,
-                        fontSize = 16.sp,
-                        fontWeight = FontWeight.Medium,
-                        modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp)
-                    )
-
-                    HorizontalDivider(
-                        thickness = 1.dp,
-                        color = Color.LightGray
+                        text = "Join Hunt",
+                        style = MaterialTheme.typography.titleMedium.copy(fontWeight = FontWeight.Bold)
                     )
                 }
-            }
-        }
 
-        Row(
-            modifier = Modifier
-                .align(Alignment.BottomCenter)
-                .fillMaxWidth()
-                .background(MaterialTheme.colorScheme.surface)
-                .padding(vertical = 8.dp),
-            horizontalArrangement = Arrangement.SpaceEvenly
-        )
-        {
-            Button(
-                onClick = { navController.navigate("join_hunt") },
-                modifier = Modifier.weight(1f).padding(horizontal = 8.dp)
-            )
-            {
-                Text("Join Hunt")
-            }
-
-            Button(
-                onClick = { navController.navigate("create_hunt") },
-                modifier = Modifier
-                    .weight(1f)
-                    .padding(horizontal = 8.dp)
-            )
-            {
-                Text("Create Hunt")
+                Button(
+                    onClick = { navController.navigate("create_hunt") },
+                    modifier = Modifier
+                        .weight(1f)
+                        .height(56.dp),
+                    colors = androidx.compose.material3.ButtonDefaults.buttonColors(
+                        containerColor = MaterialTheme.colorScheme.primary,
+                        contentColor = MaterialTheme.colorScheme.onPrimary
+                    )
+                ) {
+                    Text(
+                        text = "Create Hunt",
+                        style = MaterialTheme.typography.titleMedium.copy(fontWeight = FontWeight.Bold)
+                    )
+                }
             }
         }
     }
