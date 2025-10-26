@@ -131,7 +131,7 @@ fun ClueList(navController: NavController) {
                             Text("Location: 43.6757108°N, 79.4107835°W", color = Color.Gray)
                             Spacer(modifier = Modifier.height(6.dp))
 
-                            Text("Points Reward: 400", color = Color.Gray)
+                            Text("Points Reward: 500", color = Color.Gray)
                             Spacer(modifier = Modifier.height(12.dp))
 
                             Image(

@@ -20,6 +20,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.example.treasurely.data.AppState
 import com.example.treasurely.user.StatItem
 
 @Composable
@@ -55,9 +56,9 @@ fun Dashboard(navController: NavController) {
                             modifier = Modifier.fillMaxWidth(),
                             horizontalArrangement = Arrangement.SpaceEvenly
                         ) {
-                            StatItem("Hunts Joined", "4")
-                            StatItem("Clues Found", "12")
-                            StatItem("Total Points", "1,400")
+                            StatItem("Hunts Joined", AppState.myHunts.size.toString())
+                            StatItem("Clues Found", AppState.totalCluesFound.toString())
+                            StatItem("Total Points", AppState.totalPoints.toString())
                         }
                     }
                 }
@@ -114,7 +115,7 @@ fun Dashboard(navController: NavController) {
                         }
 
                         Text(
-                            text = "500 pts",
+                            text = "1000 pts",
                             style = MaterialTheme.typography.titleMedium,
                             color = MaterialTheme.colorScheme.primary,
                             fontWeight = FontWeight.Bold
