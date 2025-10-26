@@ -19,7 +19,8 @@ interface UserDao {
     @Query("SELECT * FROM users ORDER BY username ASC")
     fun getAllUsers(): Flow<List<User>>
 
-    fun getAllUsersByTreasureHunt() // still needs implementation
+//    @Query
+//    fun getAllUsersByTreasureHunt() // still needs implementation
 
     @Query("SELECT * FROM users WHERE id = :userId LIMIT 1")
     suspend fun getUserById(userId: Long): User?
