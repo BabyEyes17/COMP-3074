@@ -1,7 +1,5 @@
 package com.example.treasurely.data.db.dao
 
-package com.example.treasurely.data.db.dao
-
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Delete

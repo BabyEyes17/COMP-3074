@@ -1,7 +1,6 @@
 package com.example.treasurely.data.repository
 
 import com.example.treasurely.data.db.dao.TreasureHuntDao
-import com.example.treasurely.data.db.entities.TreasureHunt
 import kotlinx.coroutines.flow.Flow
 
 class TreasureHuntRepository(private val treasureHunt: TreasureHunt) {

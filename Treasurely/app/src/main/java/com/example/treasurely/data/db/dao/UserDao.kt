@@ -11,17 +11,22 @@ import kotlinx.coroutines.flow.Flow
 interface UserDao {
 
     @Insert
-    suspend fun insert(user: User)
+    suspend fun insertUser(user: User)
 
     @Delete
-    suspend fun delete(user: User)
+    suspend fun deleteUser(user: User)
 
-    @Query("SELECT * FROM users")
+    @Query("SELECT * FROM users ORDER BY username ASC")
     fun getAllUsers(): Flow<List<User>>
 
-    @Query("SELECT * FROM users WHERE id = :userId")
-    fun getUserById(userId: Long): User
+    fun getAllUsersByTreasureHunt() // still needs implementation
 
-    @Query("SELECT * FROM users WHERE name LIKE :userName")
-    fun getUserByName(userName: String): User
+    @Query("SELECT * FROM users WHERE id = :userId LIMIT 1")
+    suspend fun getUserById(userId: Long): User?
+
+    @Query("SELECT * FROM users WHERE username = :username LIMIT 1")
+    suspend fun getUserByName(username: String): User?
+
+    @Query("SELECT * FROM users WHERE email = :email LIMIT 1")
+    suspend fun getUserByEmail(email: String): User?
 }
