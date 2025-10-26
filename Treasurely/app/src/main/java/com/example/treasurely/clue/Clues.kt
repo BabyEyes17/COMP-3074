@@ -104,22 +104,48 @@ fun ClueList(navController: NavController) {
                         )
 
                         Spacer(modifier = Modifier.height(4.dp))
-                        Text("Next Hint: Follow the scent of coffee and snacks.", color = Color.Gray)
-
-                        Spacer(modifier = Modifier.height(12.dp))
-                        Text("Photo Hint", color = Color.Gray)
-                        Spacer(modifier = Modifier.height(4.dp))
-
-                        Image(
-                            painter = painterResource(id = R.drawable.gbc_cafeteria),
-                            contentDescription = "Clue Image",
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .height(160.dp)
+                        Text(
+                            "Next Hint: Follow the scent of coffee and snacks.",
+                            color = Color.Gray
                         )
+
+
+                    }
+
+                }
+            }
+                item {
+                    Card(
+                        modifier = Modifier.fillMaxWidth(),
+                        elevation = CardDefaults.cardElevation(6.dp)
+                    )
+                    {
+                        Column(modifier = Modifier.padding(16.dp)) {
+                            Spacer(modifier = Modifier.height(8.dp))
+                            Text("Cafeteria", fontSize = 18.sp, fontWeight = FontWeight.Bold)
+                            Spacer(modifier = Modifier.height(6.dp))
+
+                            Text("Description: Go near where the food is the coldest", color = Color.Gray)
+                            Spacer(modifier = Modifier.height(6.dp))
+
+                            Text("Location: 43.6757108°N, 79.4107835°W", color = Color.Gray)
+                            Spacer(modifier = Modifier.height(6.dp))
+
+                            Text("Points Reward: 400", color = Color.Gray)
+                            Spacer(modifier = Modifier.height(12.dp))
+
+                            Image(
+                                painter = painterResource(id = R.drawable.gbc_cafeteria),
+                                contentDescription = "Clue Image",
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .height(160.dp)
+                            )
+                            Spacer(modifier = Modifier.height(12.dp))
+                        }
+
                     }
                 }
             }
         }
     }
-}
