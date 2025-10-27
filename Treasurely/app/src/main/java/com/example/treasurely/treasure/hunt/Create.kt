@@ -47,7 +47,8 @@ import kotlinx.coroutines.launch
 fun CreateTreasureHunt(
     navController: NavController,
     viewModel: TreasureHuntViewModel
-) {
+)
+{
     var name by remember { mutableStateOf("") }
     var description by remember { mutableStateOf("") }
     var gpsLocation by remember { mutableStateOf("") }
@@ -63,7 +64,8 @@ fun CreateTreasureHunt(
             .padding(32.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
-    ) {
+    )
+    {
 
         Text(
             text = "Create Treasure Hunt",
@@ -165,10 +167,12 @@ fun CreateTreasureHunt(
                     }
                 }
             },
+
             modifier = Modifier
                 .fillMaxWidth(0.5f)
                 .padding(top = 8.dp)
-        ) {
+        )
+        {
             Text("Create")
         }
 
@@ -177,7 +181,8 @@ fun CreateTreasureHunt(
         Button(
             onClick = { navController.popBackStack() },
             modifier = Modifier.fillMaxWidth(0.5f)
-        ) {
+        )
+        {
             Text("Cancel")
         }
     }
