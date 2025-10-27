@@ -39,13 +39,13 @@ fun UserRegistration(navController: NavController) {
             .padding(horizontal = 32.dp)
             .padding(vertical = 48.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center
+
     )
     {
         Text(
             text = "Treasurely Registration",
             style = MaterialTheme.typography.titleLarge.copy(fontWeight = FontWeight.Bold),
-            modifier = Modifier.padding(bottom = 20.dp)
+            modifier = Modifier.padding(bottom = 40.dp)
         )
 
         TextField(
