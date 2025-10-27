@@ -46,7 +46,7 @@ fun UserRegistration(
     val snackbarHostState = remember { SnackbarHostState() }
     val scope = rememberCoroutineScope()
 
-    // ✅ Collect all users from ViewModel
+
     val allUsers by viewModel.allUsers.collectAsState(initial = emptyList())
 
     Column(

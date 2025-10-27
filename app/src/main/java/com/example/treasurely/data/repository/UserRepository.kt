@@ -10,7 +10,7 @@ class UserRepository(private val userDao: UserDao) {
         userDao.insertUser(user)
     }
 
-    suspend fun deleteUser(user: Long) {
+    suspend fun deleteUser(user: User) {
         userDao.deleteUser(user)
     }
 
