@@ -83,20 +83,20 @@ class UserViewModel(private val repository: UserRepository) : ViewModel() {
     }
 
 
-    fun joinTreasureHunt(userId: Long, treasureHuntId: Long, onResult: (Boolean) -> Unit) {
-        viewModelScope.launch {
-
-            val success = repository.joinTreasureHunt(userId, treasureHuntId)
-            onResult(success)
-        }
-    }
-
-
-    fun leaveTreasureHunt(userId: Long, treasureHuntId: Long, onResult: (Boolean) -> Unit) {
-        viewModelScope.launch {
-
-            val success = repository.leaveTreasureHunt(userId, treasureHuntId)
-            onResult(success)
-        }
-    }
+//    fun joinTreasureHunt(userId: Long, treasureHuntId: Long, onResult: (Boolean) -> Unit) {
+//        viewModelScope.launch {
+//
+//            val success = repository.joinTreasureHunt(userId, treasureHuntId)
+//            onResult(success)
+//        }
+//    }
+//
+//
+//    fun leaveTreasureHunt(userId: Long, treasureHuntId: Long, onResult: (Boolean) -> Unit) {
+//        viewModelScope.launch {
+//
+//            val success = repository.leaveTreasureHunt(userId, treasureHuntId)
+//            onResult(success)
+//        }
+//    }
 }

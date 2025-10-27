@@ -31,6 +31,8 @@ import com.example.treasurely.data.db.TreasurelyDatabase
 import com.example.treasurely.data.repository.UserRepository
 import com.example.treasurely.viewmodel.UserViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.treasurely.data.repository.TreasureHuntRepository
+import com.example.treasurely.viewmodel.TreasureHuntViewModel
 
 
 class MainActivity : ComponentActivity() {
@@ -47,19 +49,38 @@ class MainActivity : ComponentActivity() {
 
                 val context = this
                 val db = TreasurelyDatabase.getInstance(context)
+
                 val userDao = db.userDao()
                 val userRepository = UserRepository(userDao)
+
+                val treasureHuntDao = db.treasureHuntDao()
+                val treasureHuntRepository = TreasureHuntRepository(treasureHuntDao)
+
 
                 val userViewModel: UserViewModel = viewModel(
 
                     factory = object : ViewModelProvider.Factory {
 
                         override fun <T : ViewModel> create(modelClass: Class<T>): T {
+
                             @Suppress("UNCHECKED_CAST")
                             return UserViewModel(userRepository) as T
                         }
                     }
                 )
+
+                val treasureHuntViewModel: TreasureHuntViewModel = viewModel(
+
+                    factory = object : ViewModelProvider.Factory {
+
+                        override fun <T : ViewModel> create(modelClass: Class<T>): T {
+
+                            @Suppress("UNCHECKED_CAST")
+                            return TreasureHuntViewModel(treasureHuntRepository) as T
+                        }
+                    }
+                )
+
 
                 Scaffold(
                     bottomBar = { if (currentRoute !in listOf("user_login", "user_registration")) { NavBar(navController) } }
@@ -76,12 +97,12 @@ class MainActivity : ComponentActivity() {
                         startDestination = "user_registration"
                     )
                     {
-                        composable("user_home") { Dashboard(navController) }
-                        composable("dashboard") { Dashboard(navController) }
+                        composable("user_home") { Dashboard(navController, treasureHuntViewModel) }
+                        composable("dashboard") { Dashboard(navController, treasureHuntViewModel) }
                         composable("qr_code_scanner") { QRCodeScanner(navController) }
                         composable("clues") { ClueList(navController) }
                         composable("join_hunt") { JoinTreasureHunt(navController) }
-                        composable("create_hunt") { CreateTreasureHunt(navController) }
+                        composable("create_hunt") { CreateTreasureHunt(navController, treasureHuntViewModel) }
                         composable("user_profile") { UserProfile(navController) }
                         composable("user_registration") { UserRegistration(navController, userViewModel) }
                         composable("user_login") { UserLogin(navController, userViewModel) }

@@ -1,26 +1,17 @@
 package com.example.treasurely.treasure.hunt
 
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.verticalScroll
-import androidx.compose.material3.Button
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedTextField
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
+import android.widget.Toast
+import androidx.compose.foundation.layout.*
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.example.treasurely.viewmodel.TreasureHuntViewModel
+import kotlinx.coroutines.launch
 
 /*
 * The create screen should contain:
@@ -51,109 +42,143 @@ import androidx.navigation.NavController
 *
 *   - A submit button that transfers you to the dashboard
 */
+
 @Composable
-fun CreateTreasureHunt(navController: NavController) {
+fun CreateTreasureHunt(
+    navController: NavController,
+    viewModel: TreasureHuntViewModel
+) {
+    var name by remember { mutableStateOf("") }
+    var description by remember { mutableStateOf("") }
+    var gpsLocation by remember { mutableStateOf("") }
+    var radius by remember { mutableStateOf("") }
+    var reward by remember { mutableStateOf("") }
+
+    val scope = rememberCoroutineScope()
+    val context = LocalContext.current
 
     Column(
-        modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp)
-    )
-    {
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(32.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
+    ) {
 
         Text(
-            text = "Treasure Hunt Creator",
-            style = MaterialTheme.typography.headlineLarge,
-            fontWeight = FontWeight.Bold,
+            text = "Create Treasure Hunt",
+            style = MaterialTheme.typography.titleLarge.copy(fontWeight = FontWeight.Bold),
+            modifier = Modifier.padding(bottom = 16.dp)
+        )
+
+        TextField(
+            value = name,
+            onValueChange = { name = it },
+            label = { Text("Hunt Name") },
+            singleLine = true,
+            modifier = Modifier.fillMaxWidth()
+        )
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        TextField(
+            value = description,
+            onValueChange = { description = it },
+            label = { Text("Description") },
+            modifier = Modifier.fillMaxWidth()
+        )
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        TextField(
+            value = gpsLocation,
+            onValueChange = { gpsLocation = it },
+            label = { Text("Starting GPS Location") },
+            singleLine = true,
+            modifier = Modifier.fillMaxWidth()
+        )
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        TextField(
+            value = radius,
+            onValueChange = { radius = it },
+            label = { Text("Search Radius (m)") },
+            singleLine = true,
+            modifier = Modifier.fillMaxWidth()
+        )
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        TextField(
+            value = reward,
+            onValueChange = { reward = it },
+            label = { Text("Reward") },
+            singleLine = true,
+            modifier = Modifier.fillMaxWidth()
+        )
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Button(
+            onClick = {
+                scope.launch {
+                    if (name.isBlank() || gpsLocation.isBlank() || radius.isBlank()) {
+                        Toast.makeText(
+                            context,
+                            "Please fill all required fields.",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    } else {
+                        try {
+                            val radiusInt = radius.toIntOrNull() ?: 0
+                            viewModel.createTreasureHunt(
+                                name = name,
+                                description = description.ifBlank { null },
+                                gpsStartingLocation = gpsLocation,
+                                searchRadiusMeters = radiusInt,
+                                reward = reward.ifBlank { null },
+                                coverImage = null
+                            ) { hunt ->
+                                if (hunt != null) {
+                                    Toast.makeText(
+                                        context,
+                                        "Hunt created! Code: ${hunt.joinCode}",
+                                        Toast.LENGTH_LONG
+                                    ).show()
+                                    navController.navigate("dashboard")
+                                } else {
+                                    Toast.makeText(
+                                        context,
+                                        "Failed to create hunt.",
+                                        Toast.LENGTH_SHORT
+                                    ).show()
+                                }
+                            }
+                        } catch (e: Exception) {
+                            Toast.makeText(
+                                context,
+                                "Error: ${e.message}",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                        }
+                    }
+                }
+            },
             modifier = Modifier
-                .fillMaxWidth()
-                .padding(vertical = 12.dp),
-        )
-
-
-        Card(
-            modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp),
-            elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
-            colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)
-        )
-        {
-            Column(modifier = Modifier.padding(16.dp)) {
-
-                Text(
-                    "Hunt Details",
-                    style = MaterialTheme.typography.titleMedium,
-                    fontWeight = FontWeight.Bold,
-                    modifier = Modifier.padding(bottom = 8.dp)
-                )
-
-                OutlinedTextField(value = "", onValueChange = {}, label = { Text("Treasure Hunt Name") })
-                Spacer(Modifier.height(8.dp))
-
-                OutlinedTextField(value = "", onValueChange = {}, label = { Text("Description") })
-                Spacer(Modifier.height(8.dp))
-
-                OutlinedTextField(value = "", onValueChange = {}, label = { Text("Starting Point (Address / GPS)") })
-                Spacer(Modifier.height(8.dp))
-
-                OutlinedTextField(value = "", onValueChange = {}, label = { Text("Search Radius (km)") })
-                Spacer(Modifier.height(8.dp))
-
-                OutlinedTextField(value = "", onValueChange = {}, label = { Text("Start Date & Time") })
-                Spacer(Modifier.height(8.dp))
-
-                OutlinedTextField(value = "", onValueChange = {}, label = { Text("End Date & Time") })
-                Spacer(Modifier.height(8.dp))
-
-                OutlinedTextField(value = "", onValueChange = {}, label = { Text("Reward") })
-            }
+                .fillMaxWidth(0.5f)
+                .padding(top = 8.dp)
+        ) {
+            Text("Create")
         }
 
+        Spacer(modifier = Modifier.height(8.dp))
 
-        Card(
-            modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp),
-            elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
-            colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)
-        )
-        {
-            Column(modifier = Modifier.padding(16.dp)) {
-
-                Text(
-                    "Clue Details",
-                    style = MaterialTheme.typography.titleMedium,
-                    fontWeight = FontWeight.Bold,
-                    modifier = Modifier.padding(bottom = 8.dp)
-                )
-
-                OutlinedTextField(value = "", onValueChange = {}, label = { Text("Clue Name") })
-                Spacer(Modifier.height(8.dp))
-
-                OutlinedTextField(value = "", onValueChange = {}, label = { Text("Clue Description") })
-                Spacer(Modifier.height(8.dp))
-
-                OutlinedTextField(value = "", onValueChange = {}, label = { Text("Clue Location (GPS)") })
-                Spacer(Modifier.height(8.dp))
-
-                OutlinedTextField(value = "", onValueChange = {}, label = { Text("Points Reward") })
-                Spacer(Modifier.height(8.dp))
-
-                OutlinedTextField(value = "", onValueChange = {}, label = { Text("Next Clue (optional)") })
-                Spacer(Modifier.height(8.dp))
-
-                OutlinedTextField(value = "", onValueChange = {}, label = { Text("Next Clue Hint (optional)") })
-            }
-        }
-
-
-        Row(
-            modifier = Modifier.fillMaxWidth().padding(vertical = 16.dp),
-            horizontalArrangement = Arrangement.SpaceEvenly
-        )
-        {
-            Button(onClick = {}, modifier = Modifier.fillMaxWidth(0.5f)) {
-                Text("Add Clue")
-            }
-
-            Button(onClick = { navController.navigate("dashboard") }, modifier = Modifier.fillMaxWidth(0.5f)) {
-                Text("Submit")
-            }
+        Button(
+            onClick = { navController.popBackStack() },
+            modifier = Modifier.fillMaxWidth(0.5f)
+        ) {
+            Text("Cancel")
         }
     }
 }

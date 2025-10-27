@@ -1,30 +1,10 @@
 package com.example.treasurely.user
 
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.material3.Button
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.HorizontalDivider
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.SnackbarHost
-import androidx.compose.material3.SnackbarHostState
-import androidx.compose.material3.Text
-import androidx.compose.material3.TextField
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.collectAsState
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.rememberCoroutineScope
-import androidx.compose.runtime.setValue
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
@@ -45,8 +25,6 @@ fun UserRegistration(
 
     val snackbarHostState = remember { SnackbarHostState() }
     val scope = rememberCoroutineScope()
-
-    // ✅ Collect all users from ViewModel
     val allUsers by viewModel.allUsers.collectAsState(initial = emptyList())
 
     Column(
@@ -57,72 +35,72 @@ fun UserRegistration(
         verticalArrangement = Arrangement.Center
     ) {
         Text(
-            text = "Treasurely Registration",
+            text = "Create Account",
             style = MaterialTheme.typography.titleLarge.copy(fontWeight = FontWeight.Bold),
-            modifier = Modifier.padding(vertical = 8.dp)
+            modifier = Modifier.padding(bottom = 16.dp)
         )
 
         TextField(
             value = email,
             onValueChange = { email = it },
             label = { Text("Email") },
-            singleLine = true,
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            singleLine = true
         )
 
-        Spacer(modifier = Modifier.size(8.dp))
+        Spacer(modifier = Modifier.height(8.dp))
 
         TextField(
             value = username,
             onValueChange = { username = it },
             label = { Text("Username") },
-            singleLine = true,
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            singleLine = true
         )
 
-        Spacer(modifier = Modifier.size(8.dp))
+        Spacer(modifier = Modifier.height(8.dp))
 
         TextField(
             value = password,
             onValueChange = { password = it },
             label = { Text("Password") },
-            singleLine = true,
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            singleLine = true
         )
 
-        Spacer(modifier = Modifier.size(8.dp))
+        Spacer(modifier = Modifier.height(8.dp))
 
         TextField(
             value = confirmPassword,
             onValueChange = { confirmPassword = it },
             label = { Text("Confirm Password") },
-            singleLine = true,
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            singleLine = true
         )
 
-        Spacer(modifier = Modifier.size(16.dp))
+        Spacer(modifier = Modifier.height(16.dp))
 
         Button(
             onClick = {
                 when {
                     email.isBlank() || username.isBlank() || password.isBlank() -> {
-                        scope.launch { snackbarHostState.showSnackbar("All fields are required") }
+                        scope.launch { snackbarHostState.showSnackbar("All fields must be filled.") }
                     }
                     password != confirmPassword -> {
-                        scope.launch { snackbarHostState.showSnackbar("Passwords do not match") }
+                        scope.launch { snackbarHostState.showSnackbar("Passwords don’t match.") }
                     }
                     else -> {
                         scope.launch {
-                            try {
-                                viewModel.registerUser(email, username, password)
-                                snackbarHostState.showSnackbar("Registration successful!")
-                                // Clear fields after successful registration
-                                email = ""
-                                username = ""
-                                password = ""
-                                confirmPassword = ""
-                            } catch (e: Exception) {
-                                snackbarHostState.showSnackbar("Error: ${e.message}")
+                            viewModel.registerUser(email, username, password) { success ->
+                                if (success) {
+                                    scope.launch { snackbarHostState.showSnackbar("Registration complete.") }
+                                    email = ""
+                                    username = ""
+                                    password = ""
+                                    confirmPassword = ""
+                                } else {
+                                    scope.launch { snackbarHostState.showSnackbar("Registration failed.") }
+                                }
                             }
                         }
                     }
@@ -130,12 +108,12 @@ fun UserRegistration(
             },
             modifier = Modifier
                 .fillMaxWidth(0.5f)
-                .padding(horizontal = 8.dp)
+                .padding(top = 8.dp)
         ) {
             Text("Register")
         }
 
-        Spacer(modifier = Modifier.size(8.dp))
+        Spacer(modifier = Modifier.height(8.dp))
 
         Button(
             onClick = { navController.navigate("user_login") },
@@ -144,13 +122,12 @@ fun UserRegistration(
             Text("Go to Login")
         }
 
-        Spacer(modifier = Modifier.size(24.dp))
+        Spacer(modifier = Modifier.height(24.dp))
 
-        HorizontalDivider()
+        Divider()
 
-        Spacer(modifier = Modifier.size(16.dp))
+        Spacer(modifier = Modifier.height(16.dp))
 
-        // ✅ Registered Users List
         Text(
             text = "Registered Users (${allUsers.size})",
             style = MaterialTheme.typography.titleMedium.copy(fontWeight = FontWeight.Bold),
@@ -159,8 +136,7 @@ fun UserRegistration(
 
         if (allUsers.isEmpty()) {
             Text(
-                text = "No users registered yet",
-                style = MaterialTheme.typography.bodyMedium,
+                text = "No users yet.",
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
         } else {
@@ -177,9 +153,7 @@ fun UserRegistration(
                             containerColor = MaterialTheme.colorScheme.surfaceVariant
                         )
                     ) {
-                        Column(
-                            modifier = Modifier.padding(12.dp)
-                        ) {
+                        Column(modifier = Modifier.padding(12.dp)) {
                             Text(
                                 text = user.username,
                                 style = MaterialTheme.typography.bodyLarge.copy(fontWeight = FontWeight.Bold)

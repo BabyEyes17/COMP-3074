@@ -25,6 +25,7 @@ import java.time.LocalDateTime
         Index("treasureHuntId")
     ]
 )
+
 data class Clue(
 
     @PrimaryKey(autoGenerate = true)

@@ -1,13 +1,13 @@
 package com.example.treasurely.data.repository
 
 import com.example.treasurely.data.db.dao.UserDao
-import com.example.treasurely.data.db.dao.UserTreasureHuntDao
+// import com.example.treasurely.data.db.dao.UserTreasureHuntDao
 import com.example.treasurely.data.db.entities.User
-import com.example.treasurely.data.db.relations.UserTreasureHuntCrossRef
+// import com.example.treasurely.data.db.relations.UserTreasureHuntCrossRef
 import com.example.treasurely.data.db.utilities.PasswordUtils
 import kotlinx.coroutines.flow.Flow
 
-class UserRepository(private val userDao: UserDao, private val userTreasureHuntDao: UserTreasureHuntDao) {
+class UserRepository(private val userDao: UserDao) {
 
     /*
     * -- Available User Actions --
@@ -69,33 +69,33 @@ class UserRepository(private val userDao: UserDao, private val userTreasureHuntD
     }
 
 
-    /*-- User Management --*/
-    suspend fun joinTreasureHunt(userId: Long, treasureHuntId: Long): Boolean {
-
-        val ref = UserTreasureHuntCrossRef(userId, treasureHuntId)
-        val existingHunts = userTreasureHuntDao.getUserWithTreasureHunts(userId)
-        var alreadyJoined = false
-
-        existingHunts.collect { list ->
-
-            alreadyJoined = list.any { userWithHunts ->
-                userWithHunts.treasureHunts.any { it.id == treasureHuntId }
-            }
-        }
-
-        if (alreadyJoined) { return false }
-
-        userTreasureHuntDao.insertCrossRef(ref)
-        return true
-    }
-
-    suspend fun leaveTreasureHunt(userId: Long, treasureHuntId: Long): Boolean {
-
-        val ref = UserTreasureHuntCrossRef(userId, treasureHuntId)
-
-        userTreasureHuntDao.deleteCrossRef(ref)
-        return true
-    }
+//    /*-- User Management --*/
+//    suspend fun joinTreasureHunt(userId: Long, treasureHuntId: Long): Boolean {
+//
+//        val ref = UserTreasureHuntCrossRef(userId, treasureHuntId)
+//        val existingHunts = userTreasureHuntDao.getUserWithTreasureHunts(userId)
+//        var alreadyJoined = false
+//
+//        existingHunts.collect { list ->
+//
+//            alreadyJoined = list.any { userWithHunts ->
+//                userWithHunts.treasureHunts.any { it.id == treasureHuntId }
+//            }
+//        }
+//
+//        if (alreadyJoined) { return false }
+//
+//        userTreasureHuntDao.insertCrossRef(ref)
+//        return true
+//    }
+//
+//    suspend fun leaveTreasureHunt(userId: Long, treasureHuntId: Long): Boolean {
+//
+//        val ref = UserTreasureHuntCrossRef(userId, treasureHuntId)
+//
+//        userTreasureHuntDao.deleteCrossRef(ref)
+//        return true
+//    }
 
     suspend fun deleteUser(id: Long): Boolean {
 

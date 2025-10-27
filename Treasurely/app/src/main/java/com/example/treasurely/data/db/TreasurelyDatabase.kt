@@ -6,31 +6,34 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import com.example.treasurely.data.db.dao.TreasureHuntDao
-//import com.example.treasurely.data.db.dao.ClueDao
+import com.example.treasurely.data.db.dao.UserClueProgressDao
 import com.example.treasurely.data.db.dao.UserDao
+// import com.example.treasurely.data.db.dao.UserTreasureHuntDao
 import com.example.treasurely.data.db.entities.Clue
 import com.example.treasurely.data.db.entities.TreasureHunt
 import com.example.treasurely.data.db.entities.User
-import com.example.treasurely.data.db.relations.UserTreasureHuntCrossRef
+import com.example.treasurely.data.db.relations.UserClueProgressCrossRef
+// import com.example.treasurely.data.db.relations.UserTreasureHuntCrossRef
 import com.example.treasurely.data.db.utilities.DateTimeConverter
 
 @Database(
     entities = [
         User::class,
-        Clue::class,
         TreasureHunt::class,
-        UserTreasureHuntCrossRef::class
-               ],
-    version = 1,
+        Clue::class,
+        // UserTreasureHuntCrossRef::class,
+        UserClueProgressCrossRef::class
+    ],
+    version = 2,
     exportSchema = false
 )
 @TypeConverters(DateTimeConverter::class)
 abstract class TreasurelyDatabase : RoomDatabase() {
 
-    // DAOs
     abstract fun userDao(): UserDao
-    // abstract fun clueDao(): ClueDao
     abstract fun treasureHuntDao(): TreasureHuntDao
+    // abstract fun userTreasureHuntDao(): UserTreasureHuntDao
+    abstract fun userClueProgressDao(): UserClueProgressDao
 
     companion object {
         @Volatile
@@ -43,7 +46,6 @@ abstract class TreasurelyDatabase : RoomDatabase() {
                     TreasurelyDatabase::class.java,
                     "treasurely_db"
                 )
-                    // You can remove .fallbackToDestructiveMigration() in production if you want migration safety
                     .fallbackToDestructiveMigration()
                     .build()
                 INSTANCE = instance

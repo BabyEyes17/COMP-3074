@@ -6,12 +6,9 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.material3.Button
-import androidx.compose.material3.Card
-import androidx.compose.material3.HorizontalDivider
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.foundation.lazy.items
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -20,12 +17,19 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.example.treasurely.viewmodel.TreasureHuntViewModel
 import com.example.treasurely.user.StatItem
 
 @Composable
-fun Dashboard(navController: NavController) {
+fun Dashboard(
+    navController: NavController,
+    viewModel: TreasureHuntViewModel
+) {
     val context = LocalContext.current
     val contentPadding = 16.dp
+
+    // ✅ Collect all treasure hunts from DB
+    val allHunts by viewModel.allTreasureHunts.collectAsState(initial = emptyList())
 
     Box(modifier = Modifier.fillMaxSize()) {
         LazyColumn(
@@ -55,9 +59,9 @@ fun Dashboard(navController: NavController) {
                             modifier = Modifier.fillMaxWidth(),
                             horizontalArrangement = Arrangement.SpaceEvenly
                         ) {
-                            StatItem("Hunts Joined", "4")
-                            StatItem("Clues Found", "12")
-                            StatItem("Total Points", "1,400")
+                            StatItem("Hunts Joined", allHunts.size.toString())
+                            StatItem("Clues Found", "0") // Placeholder until Clue data integrated
+                            StatItem("Total Points", "0") // Placeholder for now
                         }
                     }
                 }
@@ -71,100 +75,57 @@ fun Dashboard(navController: NavController) {
                 )
             }
 
-            item {
-                Card(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .clickable {
-                            Toast.makeText(context, "Opening Campus Quest...", Toast.LENGTH_SHORT).show()
-                            navController.navigate("treasure_hunt_details")
-                        }
-                ) {
-                    Row(
+            // ✅ Show dynamic list of treasure hunts
+            if (allHunts.isEmpty()) {
+                item {
+                    Text(
+                        text = "No treasure hunts available yet.",
+                        color = Color.Gray,
+                        style = MaterialTheme.typography.bodyMedium,
+                        modifier = Modifier.padding(vertical = 12.dp)
+                    )
+                }
+            } else {
+                items(allHunts) { hunt ->
+                    Card(
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(contentPadding),
-                        horizontalArrangement = Arrangement.SpaceBetween,
-                        verticalAlignment = Alignment.CenterVertically
+                            .clickable {
+                                Toast.makeText(
+                                    context,
+                                    "Opening ${hunt.name}...",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                                navController.navigate("treasure_hunt_details")
+                            }
                     ) {
                         Row(
-                            verticalAlignment = Alignment.CenterVertically,
-                            modifier = Modifier.weight(1f)
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(contentPadding),
+                            horizontalArrangement = Arrangement.SpaceBetween,
+                            verticalAlignment = Alignment.CenterVertically
                         ) {
-                            Image(
-                                painter = painterResource(id = R.drawable.gbc_logo),
-                                contentDescription = "Campus Quest Logo",
-                                modifier = Modifier
-                                    .size(48.dp)
-                                    .padding(end = 8.dp)
-                            )
-
-                            Column {
+                            Column(modifier = Modifier.weight(1f)) {
                                 Text(
-                                    text = "Campus Quest",
+                                    text = hunt.name,
                                     style = MaterialTheme.typography.titleMedium,
                                     fontWeight = FontWeight.Medium
                                 )
                                 Text(
-                                    text = "3/5 clues found",
+                                    text = hunt.description ?: "No description",
                                     style = MaterialTheme.typography.bodySmall,
                                     color = Color.Gray
                                 )
                             }
-                        }
 
-                        Text(
-                            text = "500 pts",
-                            style = MaterialTheme.typography.titleMedium,
-                            color = MaterialTheme.colorScheme.primary,
-                            fontWeight = FontWeight.Bold
-                        )
-                    }
-                }
-            }
-
-            item {
-                Text(
-                    text = "Inactive Hunts",
-                    style = MaterialTheme.typography.titleLarge,
-                    fontWeight = FontWeight.Bold
-                )
-            }
-
-            items(3) { index ->
-                Card(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .clickable {
-                            Toast.makeText(context, "Opening hunt details...", Toast.LENGTH_SHORT).show()
-                        }
-                ) {
-                    Row(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(contentPadding),
-                        horizontalArrangement = Arrangement.SpaceBetween,
-                        verticalAlignment = Alignment.CenterVertically
-                    ) {
-                        Column(modifier = Modifier.weight(1f)) {
                             Text(
-                                text = "Treasure Hunt ${index + 1}",
+                                text = hunt.reward ?: "No reward",
                                 style = MaterialTheme.typography.titleMedium,
-                                fontWeight = FontWeight.Medium
-                            )
-                            Text(
-                                text = "${index + 2}/5 clues found",
-                                style = MaterialTheme.typography.bodySmall,
-                                color = Color.Gray
+                                color = MaterialTheme.colorScheme.primary,
+                                fontWeight = FontWeight.Bold
                             )
                         }
-
-                        Text(
-                            text = "${(index + 2) * 100} pts",
-                            style = MaterialTheme.typography.titleMedium,
-                            color = MaterialTheme.colorScheme.primary,
-                            fontWeight = FontWeight.Bold
-                        )
                     }
                 }
             }
@@ -192,7 +153,7 @@ fun Dashboard(navController: NavController) {
                     modifier = Modifier
                         .weight(1f)
                         .height(56.dp),
-                    colors = androidx.compose.material3.ButtonDefaults.buttonColors(
+                    colors = ButtonDefaults.buttonColors(
                         containerColor = MaterialTheme.colorScheme.primaryContainer,
                         contentColor = MaterialTheme.colorScheme.onPrimaryContainer
                     )
@@ -208,7 +169,7 @@ fun Dashboard(navController: NavController) {
                     modifier = Modifier
                         .weight(1f)
                         .height(56.dp),
-                    colors = androidx.compose.material3.ButtonDefaults.buttonColors(
+                    colors = ButtonDefaults.buttonColors(
                         containerColor = MaterialTheme.colorScheme.primary,
                         contentColor = MaterialTheme.colorScheme.onPrimary
                     )

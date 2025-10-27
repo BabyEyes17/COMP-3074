@@ -7,7 +7,7 @@ import androidx.room.Query
 import androidx.room.Transaction
 import androidx.room.Update
 import com.example.treasurely.data.db.entities.TreasureHunt
-import com.example.treasurely.data.db.relations.TreasureHuntWithUsers
+// import com.example.treasurely.data.db.relations.TreasureHuntWithUsers
 import kotlinx.coroutines.flow.Flow
 
 @Dao
@@ -22,9 +22,9 @@ interface TreasureHuntDao {
     @Query("SELECT * FROM treasure_hunts ORDER BY name ASC")
     fun getAllTreasureHunts(): Flow<List<TreasureHunt>>
 
-    @Transaction
-    @Query("SELECT * FROM treasure_hunts WHERE id = :id")
-    fun getTreasureHuntWithUsers(id: Int): Flow<TreasureHuntWithUsers>
+//    @Transaction
+//    @Query("SELECT * FROM treasure_hunts WHERE id = :id")
+//    fun getTreasureHuntWithUsers(id: Int): Flow<TreasureHuntWithUsers>
 
     @Query("SELECT * FROM treasure_hunts WHERE id = :id LIMIT 1")
     suspend fun getTreasureHuntById(id: Long): TreasureHunt?
@@ -44,6 +44,4 @@ interface TreasureHuntDao {
     /*-- Delete --*/
     @Delete
     suspend fun deleteTreasureHunt(treasureHunt: TreasureHunt)
-
-
 }
