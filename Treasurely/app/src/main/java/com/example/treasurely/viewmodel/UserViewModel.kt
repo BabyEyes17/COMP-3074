@@ -10,6 +10,7 @@ import kotlinx.coroutines.launch
 
 class UserViewModel(private val repository: UserRepository) : ViewModel() {
 
+
     /*
     * -- Available User Actions --
     *
@@ -20,22 +21,36 @@ class UserViewModel(private val repository: UserRepository) : ViewModel() {
     *
     * registerUser(email: String, username: String, password: String) returns boolean
     * loginUser(email: String, password: String) returns boolean
+    * logoutUser() clears current user state
+    * deleteUser(id: Long) returns boolean
     *
-    * deleteUser(user: User) returns boolean
+    * joinTreasureHunt(userId: Long, treasureHuntId: Long) returns boolean
+    * leaveTreasureHunt(userId: Long, treasureHuntId: Long) returns boolean
     */
+
 
     private val _currentUser = MutableStateFlow<User?>(null)
     val currentUser: StateFlow<User?> = _currentUser
 
+
+    private val _joinStatus = MutableStateFlow<String?>(null)
+    val joinStatus: StateFlow<String?> = _joinStatus
+
+
     val allUsers = repository.getAllUsers()
 
-    fun registerUser(email: String, username: String, password: String) {
+
+    fun registerUser(email: String, username: String, password: String, onResult: (Boolean) -> Unit) {
+
         viewModelScope.launch {
-            repository.registerUser(email, username, password)
+            val success = repository.registerUser(email, username, password)
+            onResult(success)
         }
     }
 
+
     fun loginUser(email: String, password: String, onResult: (Boolean) -> Unit) {
+
         viewModelScope.launch {
 
             val success = repository.loginUser(email, password)
@@ -57,9 +72,31 @@ class UserViewModel(private val repository: UserRepository) : ViewModel() {
         _currentUser.value = null
     }
 
-    fun deleteUser(id: Long) {
+
+    fun deleteUser(id: Long, onResult: (Boolean) -> Unit) {
+
         viewModelScope.launch {
-            repository.deleteUser(id)
+
+            val success = repository.deleteUser(id)
+            onResult(success)
+        }
+    }
+
+
+    fun joinTreasureHunt(userId: Long, treasureHuntId: Long, onResult: (Boolean) -> Unit) {
+        viewModelScope.launch {
+
+            val success = repository.joinTreasureHunt(userId, treasureHuntId)
+            onResult(success)
+        }
+    }
+
+
+    fun leaveTreasureHunt(userId: Long, treasureHuntId: Long, onResult: (Boolean) -> Unit) {
+        viewModelScope.launch {
+
+            val success = repository.leaveTreasureHunt(userId, treasureHuntId)
+            onResult(success)
         }
     }
 }

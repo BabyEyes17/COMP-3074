@@ -12,6 +12,7 @@ data class TreasureHunt(
 
     val name: String,
     val description: String? = null,
+    val joinCode: String,
 
     // We may wanna set this as a Location object with more detailed data
     val gpsStartingLocation: String,

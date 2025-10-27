@@ -5,16 +5,22 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
+import com.example.treasurely.data.db.dao.TreasureHuntDao
 //import com.example.treasurely.data.db.dao.ClueDao
-//import com.example.treasurely.data.db.dao.TreasureHuntDao
 import com.example.treasurely.data.db.dao.UserDao
 import com.example.treasurely.data.db.entities.Clue
 import com.example.treasurely.data.db.entities.TreasureHunt
 import com.example.treasurely.data.db.entities.User
+import com.example.treasurely.data.db.relations.UserTreasureHuntCrossRef
 import com.example.treasurely.data.db.utilities.DateTimeConverter
 
 @Database(
-    entities = [User::class, Clue::class, TreasureHunt::class],
+    entities = [
+        User::class,
+        Clue::class,
+        TreasureHunt::class,
+        UserTreasureHuntCrossRef::class
+               ],
     version = 1,
     exportSchema = false
 )
@@ -23,8 +29,8 @@ abstract class TreasurelyDatabase : RoomDatabase() {
 
     // DAOs
     abstract fun userDao(): UserDao
-//    abstract fun clueDao(): ClueDao
-//    abstract fun treasureHuntDao(): TreasureHuntDao
+    // abstract fun clueDao(): ClueDao
+    abstract fun treasureHuntDao(): TreasureHuntDao
 
     companion object {
         @Volatile
