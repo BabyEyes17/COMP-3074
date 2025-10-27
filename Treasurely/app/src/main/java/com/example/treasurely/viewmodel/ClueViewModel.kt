@@ -63,8 +63,8 @@ class ClueViewModel(private val repository: ClueRepository) : ViewModel() {
     fun getCluesForTreasureHunt(treasureHuntId: Long) =
         repository.getCluesForTreasureHunt(treasureHuntId)
 
-    /* -- User Progress -- */
 
+    /* -- User Progress -- */
     fun recordUserProgress(userId: Long, clueId: Long, onResult: (Boolean) -> Unit) {
         viewModelScope.launch {
             val success = repository.recordUserProgress(userId, clueId)

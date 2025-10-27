@@ -13,7 +13,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
@@ -24,20 +23,22 @@ import com.example.treasurely.user.StatItem
 fun Dashboard(
     navController: NavController,
     viewModel: TreasureHuntViewModel
-) {
+)
+{
     val context = LocalContext.current
     val contentPadding = 16.dp
 
-    // ✅ Collect all treasure hunts from DB
     val allHunts by viewModel.allTreasureHunts.collectAsState(initial = emptyList())
 
     Box(modifier = Modifier.fillMaxSize()) {
+
         LazyColumn(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(contentPadding),
             verticalArrangement = Arrangement.spacedBy(12.dp)
-        ) {
+        )
+        {
             item {
                 Text(
                     text = "My Treasure Hunts",
@@ -47,18 +48,23 @@ fun Dashboard(
             }
 
             item {
+
                 Card(modifier = Modifier.fillMaxWidth()) {
+
                     Column(modifier = Modifier.padding(contentPadding)) {
+
                         Text(
                             text = "Statistics",
                             style = MaterialTheme.typography.titleLarge,
                             fontWeight = FontWeight.Bold,
                             modifier = Modifier.padding(bottom = 12.dp)
                         )
+
                         Row(
                             modifier = Modifier.fillMaxWidth(),
                             horizontalArrangement = Arrangement.SpaceEvenly
-                        ) {
+                        )
+                        {
                             StatItem("Hunts Joined", allHunts.size.toString())
                             StatItem("Clues Found", "0") // Placeholder until Clue data integrated
                             StatItem("Total Points", "0") // Placeholder for now
@@ -75,7 +81,6 @@ fun Dashboard(
                 )
             }
 
-            // ✅ Show dynamic list of treasure hunts
             if (allHunts.isEmpty()) {
                 item {
                     Text(
@@ -85,7 +90,9 @@ fun Dashboard(
                         modifier = Modifier.padding(vertical = 12.dp)
                     )
                 }
-            } else {
+            }
+
+            else {
                 items(allHunts) { hunt ->
                     Card(
                         modifier = Modifier
@@ -98,14 +105,16 @@ fun Dashboard(
                                 ).show()
                                 navController.navigate("treasure_hunt_details")
                             }
-                    ) {
+                    )
+                    {
                         Row(
                             modifier = Modifier
                                 .fillMaxWidth()
                                 .padding(contentPadding),
                             horizontalArrangement = Arrangement.SpaceBetween,
                             verticalAlignment = Alignment.CenterVertically
-                        ) {
+                        )
+                        {
                             Column(modifier = Modifier.weight(1f)) {
                                 Text(
                                     text = hunt.name,
@@ -136,7 +145,8 @@ fun Dashboard(
                 .align(Alignment.BottomCenter)
                 .fillMaxWidth()
                 .background(MaterialTheme.colorScheme.surface)
-        ) {
+        )
+        {
             HorizontalDivider(
                 thickness = 1.dp,
                 color = Color.LightGray.copy(alpha = 0.4f)
@@ -147,7 +157,8 @@ fun Dashboard(
                     .fillMaxWidth()
                     .padding(all = contentPadding),
                 horizontalArrangement = Arrangement.spacedBy(12.dp)
-            ) {
+            )
+            {
                 Button(
                     onClick = { navController.navigate("join_hunt") },
                     modifier = Modifier
@@ -157,7 +168,8 @@ fun Dashboard(
                         containerColor = MaterialTheme.colorScheme.primaryContainer,
                         contentColor = MaterialTheme.colorScheme.onPrimaryContainer
                     )
-                ) {
+                )
+                {
                     Text(
                         text = "Join Hunt",
                         style = MaterialTheme.typography.titleMedium.copy(fontWeight = FontWeight.Bold)
@@ -173,7 +185,8 @@ fun Dashboard(
                         containerColor = MaterialTheme.colorScheme.primary,
                         contentColor = MaterialTheme.colorScheme.onPrimary
                     )
-                ) {
+                )
+                {
                     Text(
                         text = "Create Hunt",
                         style = MaterialTheme.typography.titleMedium.copy(fontWeight = FontWeight.Bold)
