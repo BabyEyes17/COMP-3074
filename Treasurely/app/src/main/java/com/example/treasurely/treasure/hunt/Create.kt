@@ -124,16 +124,32 @@ fun CreateTreasureHunt(
 
         Button(
             onClick = {
+
+            },
+
+            modifier = Modifier.padding(0.dp, 8.dp),
+        )
+        {
+            Text("Add Clue")
+        }
+
+        Button(
+            onClick = {
                 scope.launch {
+
                     if (name.isBlank() || gpsLocation.isBlank() || radius.isBlank()) {
                         Toast.makeText(
                             context,
                             "Please fill all required fields.",
                             Toast.LENGTH_SHORT
                         ).show()
-                    } else {
+                    }
+
+                    else {
                         try {
+
                             val radiusInt = radius.toIntOrNull() ?: 0
+
                             viewModel.createTreasureHunt(
                                 name = name,
                                 description = description.ifBlank { null },
@@ -141,15 +157,21 @@ fun CreateTreasureHunt(
                                 searchRadiusMeters = radiusInt,
                                 reward = reward.ifBlank { null },
                                 coverImage = null
-                            ) { hunt ->
+                            )
+                            { hunt ->
+
                                 if (hunt != null) {
+
                                     Toast.makeText(
                                         context,
                                         "Hunt created! Code: ${hunt.joinCode}",
                                         Toast.LENGTH_LONG
                                     ).show()
+
                                     navController.navigate("dashboard")
-                                } else {
+                                }
+
+                                else {
                                     Toast.makeText(
                                         context,
                                         "Failed to create hunt.",
@@ -157,7 +179,9 @@ fun CreateTreasureHunt(
                                     ).show()
                                 }
                             }
-                        } catch (e: Exception) {
+                        }
+
+                        catch (e: Exception) {
                             Toast.makeText(
                                 context,
                                 "Error: ${e.message}",
