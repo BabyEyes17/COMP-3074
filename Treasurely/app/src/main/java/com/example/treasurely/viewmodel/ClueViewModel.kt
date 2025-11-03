@@ -3,12 +3,12 @@ package com.example.treasurely.viewmodel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.treasurely.data.db.entities.Clue
-import com.example.treasurely.data.repository.ClueRepository
+import com.example.treasurely.data.repository.ClueRepositoryImpl
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
-class ClueViewModel(private val repository: ClueRepository) : ViewModel() {
+class ClueViewModel(private val repository: ClueRepositoryImpl) : ViewModel() {
 
     /*
     * -- Available Clue Actions --

@@ -1,1006 +1,1006 @@
 Folder PATH listing for volume Drive 1 (1TB HDD)
 Volume serial number is E60E-8758
 D:.
-³   .gitignore
-³   build.gradle.kts
-³   gradle.properties
-³   gradlew
-³   gradlew.bat
-³   local.properties
-³   project_structure.txt
-³   settings.gradle.kts
-³   
-ÃÄÄÄ.gradle
-³   ³   config.properties
-³   ³   file-system.probe
-³   ³   
-³   ÃÄÄÄ8.13
-³   ³   ³   gc.properties
-³   ³   ³   
-³   ³   ÃÄÄÄchecksums
-³   ³   ³       checksums.lock
-³   ³   ³       md5-checksums.bin
-³   ³   ³       sha1-checksums.bin
-³   ³   ³       
-³   ³   ÃÄÄÄexecutionHistory
-³   ³   ³       executionHistory.bin
-³   ³   ³       executionHistory.lock
-³   ³   ³       
-³   ³   ÃÄÄÄexpanded
-³   ³   ÃÄÄÄfileChanges
-³   ³   ³       last-build.bin
-³   ³   ³       
-³   ³   ÃÄÄÄfileHashes
-³   ³   ³       fileHashes.bin
-³   ³   ³       fileHashes.lock
-³   ³   ³       resourceHashesCache.bin
-³   ³   ³       
-³   ³   ÀÄÄÄvcsMetadata
-³   ÃÄÄÄbuildOutputCleanup
-³   ³       buildOutputCleanup.lock
-³   ³       cache.properties
-³   ³       outputFiles.bin
-³   ³       
-³   ÀÄÄÄvcs-1
-³           gc.properties
-³           
-ÃÄÄÄ.idea
-³   ³   .gitignore
-³   ³   .name
-³   ³   AndroidProjectSystem.xml
-³   ³   appInsightsSettings.xml
-³   ³   assetWizardSettings.xml
-³   ³   compiler.xml
-³   ³   deploymentTargetSelector.xml
-³   ³   deviceManager.xml
-³   ³   gradle.xml
-³   ³   migrations.xml
-³   ³   misc.xml
-³   ³   runConfigurations.xml
-³   ³   vcs.xml
-³   ³   workspace.xml
-³   ³   
-³   ÃÄÄÄcaches
-³   ³       deviceStreaming.xml
-³   ³       
-³   ÃÄÄÄinspectionProfiles
-³   ³       Project_Default.xml
-³   ³       
-³   ÀÄÄÄmodules
-³       ÀÄÄÄapp
-ÃÄÄÄ.kotlin
-³   ÀÄÄÄsessions
-ÃÄÄÄapp
-³   ³   .gitignore
-³   ³   build.gradle.kts
-³   ³   proguard-rules.pro
-³   ³   
-³   ÃÄÄÄbuild
-³   ³   ÃÄÄÄgenerated
-³   ³   ³   ÃÄÄÄksp
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÃÄÄÄjava
-³   ³   ³   ³       ³   ÀÄÄÄcom
-³   ³   ³   ³       ³       ÀÄÄÄexample
-³   ³   ³   ³       ³           ÀÄÄÄtreasurely
-³   ³   ³   ³       ³               ÀÄÄÄdata
-³   ³   ³   ³       ³                   ÀÄÄÄdb
-³   ³   ³   ³       ³                       ³   TreasurelyDatabase_Impl.java
-³   ³   ³   ³       ³                       ³   
-³   ³   ³   ³       ³                       ÀÄÄÄdao
-³   ³   ³   ³       ³                               TreasureHuntDao_Impl.java
-³   ³   ³   ³       ³                               UserDao_Impl.java
-³   ³   ³   ³       ³                               UserTreasureHuntDao_Impl.java
-³   ³   ³   ³       ³                               
-³   ³   ³   ³       ÀÄÄÄkotlin
-³   ³   ³   ÃÄÄÄres
-³   ³   ³   ³   ÃÄÄÄpngs
-³   ³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³   ÀÄÄÄresValues
-³   ³   ³   ³       ÀÄÄÄdebug
-³   ³   ³   ÀÄÄÄupdated_navigation_xml
-³   ³   ³       ÀÄÄÄdebug
-³   ³   ÃÄÄÄintermediates
-³   ³   ³   ÃÄÄÄaar_metadata_check
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄcheckDebugAarMetadata
-³   ³   ³   ÃÄÄÄannotation_processor_list
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄjavaPreCompileDebug
-³   ³   ³   ³               annotationProcessors.json
-³   ³   ³   ³               
-³   ³   ³   ÃÄÄÄapp_metadata
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄwriteDebugAppMetadata
-³   ³   ³   ³               app-metadata.properties
-³   ³   ³   ³               
-³   ³   ³   ÃÄÄÄassets
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄmergeDebugAssets
-³   ³   ³   ÃÄÄÄcompatible_screen_manifest
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄcreateDebugCompatibleScreenManifests
-³   ³   ³   ³               output-metadata.json
-³   ³   ³   ³               
-³   ³   ³   ÃÄÄÄcompiled_navigation_res
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄcompileDebugNavigationResources
-³   ³   ³   ÃÄÄÄcompile_and_runtime_not_namespaced_r_class_jar
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄprocessDebugResources
-³   ³   ³   ³               R.jar
-³   ³   ³   ³               
-³   ³   ³   ÃÄÄÄcompressed_assets
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄcompressDebugAssets
-³   ³   ³   ³           ÀÄÄÄout
-³   ³   ³   ÃÄÄÄdata_binding_layout_info_type_merge
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄmergeDebugResources
-³   ³   ³   ³           ÀÄÄÄout
-³   ³   ³   ÃÄÄÄdata_binding_layout_info_type_package
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄpackageDebugResources
-³   ³   ³   ³           ÀÄÄÄout
-³   ³   ³   ÃÄÄÄdesugar_lib_dex
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄl8DexDesugarLibDebug
-³   ³   ³   ³               classes1000.dex
-³   ³   ³   ³               
-³   ³   ³   ÃÄÄÄdex
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÃÄÄÄmergeExtDexDebug
-³   ³   ³   ³       ³       classes.dex
-³   ³   ³   ³       ³       classes2.dex
-³   ³   ³   ³       ³       
-³   ³   ³   ³       ÀÄÄÄmergeLibDexDebug
-³   ³   ³   ³           ÃÄÄÄ0
-³   ³   ³   ³           ÃÄÄÄ1
-³   ³   ³   ³           ÃÄÄÄ10
-³   ³   ³   ³           ÃÄÄÄ11
-³   ³   ³   ³           ÃÄÄÄ12
-³   ³   ³   ³           ÃÄÄÄ13
-³   ³   ³   ³           ÃÄÄÄ14
-³   ³   ³   ³           ÃÄÄÄ15
-³   ³   ³   ³           ÃÄÄÄ2
-³   ³   ³   ³           ÃÄÄÄ3
-³   ³   ³   ³           ÃÄÄÄ4
-³   ³   ³   ³           ÃÄÄÄ5
-³   ³   ³   ³           ÃÄÄÄ6
-³   ³   ³   ³           ÃÄÄÄ7
-³   ³   ³   ³           ÃÄÄÄ8
-³   ³   ³   ³           ÀÄÄÄ9
-³   ³   ³   ÃÄÄÄduplicate_classes_check
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄcheckDebugDuplicateClasses
-³   ³   ³   ÃÄÄÄexternal_file_lib_dex_archives
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄdesugarDebugFileDependencies
-³   ³   ³   ÃÄÄÄincremental
-³   ³   ³   ³   ÃÄÄÄdebug
-³   ³   ³   ³   ³   ÃÄÄÄmergeDebugResources
-³   ³   ³   ³   ³   ³   ³   compile-file-map.properties
-³   ³   ³   ³   ³   ³   ³   merger.xml
-³   ³   ³   ³   ³   ³   ³   
-³   ³   ³   ³   ³   ³   ÃÄÄÄmerged.dir
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues
-³   ³   ³   ³   ³   ³   ³   ³       values.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-af
-³   ³   ³   ³   ³   ³   ³   ³       values-af.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-am
-³   ³   ³   ³   ³   ³   ³   ³       values-am.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-ar
-³   ³   ³   ³   ³   ³   ³   ³       values-ar.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-as
-³   ³   ³   ³   ³   ³   ³   ³       values-as.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-az
-³   ³   ³   ³   ³   ³   ³   ³       values-az.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-b+sr+Latn
-³   ³   ³   ³   ³   ³   ³   ³       values-b+sr+Latn.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-be
-³   ³   ³   ³   ³   ³   ³   ³       values-be.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-bg
-³   ³   ³   ³   ³   ³   ³   ³       values-bg.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-bn
-³   ³   ³   ³   ³   ³   ³   ³       values-bn.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-bs
-³   ³   ³   ³   ³   ³   ³   ³       values-bs.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-ca
-³   ³   ³   ³   ³   ³   ³   ³       values-ca.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-cs
-³   ³   ³   ³   ³   ³   ³   ³       values-cs.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-da
-³   ³   ³   ³   ³   ³   ³   ³       values-da.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-de
-³   ³   ³   ³   ³   ³   ³   ³       values-de.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-el
-³   ³   ³   ³   ³   ³   ³   ³       values-el.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-en-rAU
-³   ³   ³   ³   ³   ³   ³   ³       values-en-rAU.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-en-rCA
-³   ³   ³   ³   ³   ³   ³   ³       values-en-rCA.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-en-rGB
-³   ³   ³   ³   ³   ³   ³   ³       values-en-rGB.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-en-rIN
-³   ³   ³   ³   ³   ³   ³   ³       values-en-rIN.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-en-rXC
-³   ³   ³   ³   ³   ³   ³   ³       values-en-rXC.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-es
-³   ³   ³   ³   ³   ³   ³   ³       values-es.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-es-rUS
-³   ³   ³   ³   ³   ³   ³   ³       values-es-rUS.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-et
-³   ³   ³   ³   ³   ³   ³   ³       values-et.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-eu
-³   ³   ³   ³   ³   ³   ³   ³       values-eu.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-fa
-³   ³   ³   ³   ³   ³   ³   ³       values-fa.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-fi
-³   ³   ³   ³   ³   ³   ³   ³       values-fi.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-fr
-³   ³   ³   ³   ³   ³   ³   ³       values-fr.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-fr-rCA
-³   ³   ³   ³   ³   ³   ³   ³       values-fr-rCA.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-gl
-³   ³   ³   ³   ³   ³   ³   ³       values-gl.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-gu
-³   ³   ³   ³   ³   ³   ³   ³       values-gu.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-hi
-³   ³   ³   ³   ³   ³   ³   ³       values-hi.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-hr
-³   ³   ³   ³   ³   ³   ³   ³       values-hr.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-hu
-³   ³   ³   ³   ³   ³   ³   ³       values-hu.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-hy
-³   ³   ³   ³   ³   ³   ³   ³       values-hy.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-in
-³   ³   ³   ³   ³   ³   ³   ³       values-in.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-is
-³   ³   ³   ³   ³   ³   ³   ³       values-is.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-it
-³   ³   ³   ³   ³   ³   ³   ³       values-it.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-iw
-³   ³   ³   ³   ³   ³   ³   ³       values-iw.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-ja
-³   ³   ³   ³   ³   ³   ³   ³       values-ja.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-ka
-³   ³   ³   ³   ³   ³   ³   ³       values-ka.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-kk
-³   ³   ³   ³   ³   ³   ³   ³       values-kk.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-km
-³   ³   ³   ³   ³   ³   ³   ³       values-km.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-kn
-³   ³   ³   ³   ³   ³   ³   ³       values-kn.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-ko
-³   ³   ³   ³   ³   ³   ³   ³       values-ko.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-ky
-³   ³   ³   ³   ³   ³   ³   ³       values-ky.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-lo
-³   ³   ³   ³   ³   ³   ³   ³       values-lo.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-lt
-³   ³   ³   ³   ³   ³   ³   ³       values-lt.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-lv
-³   ³   ³   ³   ³   ³   ³   ³       values-lv.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-mk
-³   ³   ³   ³   ³   ³   ³   ³       values-mk.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-ml
-³   ³   ³   ³   ³   ³   ³   ³       values-ml.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-mn
-³   ³   ³   ³   ³   ³   ³   ³       values-mn.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-mr
-³   ³   ³   ³   ³   ³   ³   ³       values-mr.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-ms
-³   ³   ³   ³   ³   ³   ³   ³       values-ms.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-my
-³   ³   ³   ³   ³   ³   ³   ³       values-my.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-nb
-³   ³   ³   ³   ³   ³   ³   ³       values-nb.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-ne
-³   ³   ³   ³   ³   ³   ³   ³       values-ne.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-nl
-³   ³   ³   ³   ³   ³   ³   ³       values-nl.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-or
-³   ³   ³   ³   ³   ³   ³   ³       values-or.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-pa
-³   ³   ³   ³   ³   ³   ³   ³       values-pa.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-pl
-³   ³   ³   ³   ³   ³   ³   ³       values-pl.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-pt
-³   ³   ³   ³   ³   ³   ³   ³       values-pt.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-pt-rBR
-³   ³   ³   ³   ³   ³   ³   ³       values-pt-rBR.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-pt-rPT
-³   ³   ³   ³   ³   ³   ³   ³       values-pt-rPT.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-ro
-³   ³   ³   ³   ³   ³   ³   ³       values-ro.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-ru
-³   ³   ³   ³   ³   ³   ³   ³       values-ru.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-si
-³   ³   ³   ³   ³   ³   ³   ³       values-si.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-sk
-³   ³   ³   ³   ³   ³   ³   ³       values-sk.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-sl
-³   ³   ³   ³   ³   ³   ³   ³       values-sl.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-sq
-³   ³   ³   ³   ³   ³   ³   ³       values-sq.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-sr
-³   ³   ³   ³   ³   ³   ³   ³       values-sr.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-sv
-³   ³   ³   ³   ³   ³   ³   ³       values-sv.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-sw
-³   ³   ³   ³   ³   ³   ³   ³       values-sw.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-ta
-³   ³   ³   ³   ³   ³   ³   ³       values-ta.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-te
-³   ³   ³   ³   ³   ³   ³   ³       values-te.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-th
-³   ³   ³   ³   ³   ³   ³   ³       values-th.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-tl
-³   ³   ³   ³   ³   ³   ³   ³       values-tl.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-tr
-³   ³   ³   ³   ³   ³   ³   ³       values-tr.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-uk
-³   ³   ³   ³   ³   ³   ³   ³       values-uk.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-ur
-³   ³   ³   ³   ³   ³   ³   ³       values-ur.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-uz
-³   ³   ³   ³   ³   ³   ³   ³       values-uz.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-v21
-³   ³   ³   ³   ³   ³   ³   ³       values-v21.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-v30
-³   ³   ³   ³   ³   ³   ³   ³       values-v30.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-vi
-³   ³   ³   ³   ³   ³   ³   ³       values-vi.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-zh-rCN
-³   ³   ³   ³   ³   ³   ³   ³       values-zh-rCN.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-zh-rHK
-³   ³   ³   ³   ³   ³   ³   ³       values-zh-rHK.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÃÄÄÄvalues-zh-rTW
-³   ³   ³   ³   ³   ³   ³   ³       values-zh-rTW.xml
-³   ³   ³   ³   ³   ³   ³   ³       
-³   ³   ³   ³   ³   ³   ³   ÀÄÄÄvalues-zu
-³   ³   ³   ³   ³   ³   ³           values-zu.xml
-³   ³   ³   ³   ³   ³   ³           
-³   ³   ³   ³   ³   ³   ÀÄÄÄstripped.dir
-³   ³   ³   ³   ³   ÀÄÄÄpackageDebugResources
-³   ³   ³   ³   ³       ³   compile-file-map.properties
-³   ³   ³   ³   ³       ³   merger.xml
-³   ³   ³   ³   ³       ³   
-³   ³   ³   ³   ³       ÃÄÄÄmerged.dir
-³   ³   ³   ³   ³       ³   ÀÄÄÄvalues
-³   ³   ³   ³   ³       ³           values.xml
-³   ³   ³   ³   ³       ³           
-³   ³   ³   ³   ³       ÀÄÄÄstripped.dir
-³   ³   ³   ³   ÃÄÄÄmergeDebugAssets
-³   ³   ³   ³   ³       merger.xml
-³   ³   ³   ³   ³       
-³   ³   ³   ³   ÃÄÄÄmergeDebugJniLibFolders
-³   ³   ³   ³   ³       merger.xml
-³   ³   ³   ³   ³       
-³   ³   ³   ³   ÀÄÄÄmergeDebugShaders
-³   ³   ³   ³           merger.xml
-³   ³   ³   ³           
-³   ³   ³   ÃÄÄÄl8_art_profile
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄl8DexDesugarLibDebug
-³   ³   ³   ÃÄÄÄlinked_resources_binary_format
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄprocessDebugResources
-³   ³   ³   ³               linked-resources-binary-format-debug.ap_
-³   ³   ³   ³               output-metadata.json
-³   ³   ³   ³               
-³   ³   ³   ÃÄÄÄlocal_only_symbol_list
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄparseDebugLocalResources
-³   ³   ³   ³               R-def.txt
-³   ³   ³   ³               
-³   ³   ³   ÃÄÄÄmanifest_merge_blame_file
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄprocessDebugMainManifest
-³   ³   ³   ³               manifest-merger-blame-debug-report.txt
-³   ³   ³   ³               
-³   ³   ³   ÃÄÄÄmerged_jni_libs
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄmergeDebugJniLibFolders
-³   ³   ³   ³           ÀÄÄÄout
-³   ³   ³   ÃÄÄÄmerged_manifest
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄprocessDebugMainManifest
-³   ³   ³   ³               AndroidManifest.xml
-³   ³   ³   ³               
-³   ³   ³   ÃÄÄÄmerged_manifests
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄprocessDebugManifest
-³   ³   ³   ³               AndroidManifest.xml
-³   ³   ³   ³               output-metadata.json
-³   ³   ³   ³               
-³   ³   ³   ÃÄÄÄmerged_native_libs
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄmergeDebugNativeLibs
-³   ³   ³   ³           ÀÄÄÄout
-³   ³   ³   ³               ÀÄÄÄlib
-³   ³   ³   ³                   ÃÄÄÄarm64-v8a
-³   ³   ³   ³                   ³       libandroidx.graphics.path.so
-³   ³   ³   ³                   ³       
-³   ³   ³   ³                   ÃÄÄÄarmeabi-v7a
-³   ³   ³   ³                   ³       libandroidx.graphics.path.so
-³   ³   ³   ³                   ³       
-³   ³   ³   ³                   ÃÄÄÄx86
-³   ³   ³   ³                   ³       libandroidx.graphics.path.so
-³   ³   ³   ³                   ³       
-³   ³   ³   ³                   ÀÄÄÄx86_64
-³   ³   ³   ³                           libandroidx.graphics.path.so
-³   ³   ³   ³                           
-³   ³   ³   ÃÄÄÄmerged_res
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄmergeDebugResources
-³   ³   ³   ³               drawable_baseline_question_mark_24.xml.flat
-³   ³   ³   ³               drawable_gbc_cafeteria.jpg.flat
-³   ³   ³   ³               drawable_gbc_library.jpg.flat
-³   ³   ³   ³               drawable_gbc_logo.png.flat
-³   ³   ³   ³               drawable_gbc_main_entrance.jpg.flat
-³   ³   ³   ³               drawable_ic_launcher_background.xml.flat
-³   ³   ³   ³               drawable_ic_launcher_foreground.xml.flat
-³   ³   ³   ³               drawable_outline_group_24.xml.flat
-³   ³   ³   ³               drawable_outline_photo_24.xml.flat
-³   ³   ³   ³               drawable_outline_qr_code_24.xml.flat
-³   ³   ³   ³               drawable_outline_qr_code_scanner_24.xml.flat
-³   ³   ³   ³               mipmap-anydpi-v26_ic_launcher.xml.flat
-³   ³   ³   ³               mipmap-anydpi-v26_ic_launcher_round.xml.flat
-³   ³   ³   ³               mipmap-hdpi_ic_launcher.webp.flat
-³   ³   ³   ³               mipmap-hdpi_ic_launcher_round.webp.flat
-³   ³   ³   ³               mipmap-mdpi_ic_launcher.webp.flat
-³   ³   ³   ³               mipmap-mdpi_ic_launcher_round.webp.flat
-³   ³   ³   ³               mipmap-xhdpi_ic_launcher.webp.flat
-³   ³   ³   ³               mipmap-xhdpi_ic_launcher_round.webp.flat
-³   ³   ³   ³               mipmap-xxhdpi_ic_launcher.webp.flat
-³   ³   ³   ³               mipmap-xxhdpi_ic_launcher_round.webp.flat
-³   ³   ³   ³               mipmap-xxxhdpi_ic_launcher.webp.flat
-³   ³   ³   ³               mipmap-xxxhdpi_ic_launcher_round.webp.flat
-³   ³   ³   ³               values-af_values-af.arsc.flat
-³   ³   ³   ³               values-am_values-am.arsc.flat
-³   ³   ³   ³               values-ar_values-ar.arsc.flat
-³   ³   ³   ³               values-as_values-as.arsc.flat
-³   ³   ³   ³               values-az_values-az.arsc.flat
-³   ³   ³   ³               values-b+sr+Latn_values-b+sr+Latn.arsc.flat
-³   ³   ³   ³               values-be_values-be.arsc.flat
-³   ³   ³   ³               values-bg_values-bg.arsc.flat
-³   ³   ³   ³               values-bn_values-bn.arsc.flat
-³   ³   ³   ³               values-bs_values-bs.arsc.flat
-³   ³   ³   ³               values-ca_values-ca.arsc.flat
-³   ³   ³   ³               values-cs_values-cs.arsc.flat
-³   ³   ³   ³               values-da_values-da.arsc.flat
-³   ³   ³   ³               values-de_values-de.arsc.flat
-³   ³   ³   ³               values-el_values-el.arsc.flat
-³   ³   ³   ³               values-en-rAU_values-en-rAU.arsc.flat
-³   ³   ³   ³               values-en-rCA_values-en-rCA.arsc.flat
-³   ³   ³   ³               values-en-rGB_values-en-rGB.arsc.flat
-³   ³   ³   ³               values-en-rIN_values-en-rIN.arsc.flat
-³   ³   ³   ³               values-en-rXC_values-en-rXC.arsc.flat
-³   ³   ³   ³               values-es-rUS_values-es-rUS.arsc.flat
-³   ³   ³   ³               values-es_values-es.arsc.flat
-³   ³   ³   ³               values-et_values-et.arsc.flat
-³   ³   ³   ³               values-eu_values-eu.arsc.flat
-³   ³   ³   ³               values-fa_values-fa.arsc.flat
-³   ³   ³   ³               values-fi_values-fi.arsc.flat
-³   ³   ³   ³               values-fr-rCA_values-fr-rCA.arsc.flat
-³   ³   ³   ³               values-fr_values-fr.arsc.flat
-³   ³   ³   ³               values-gl_values-gl.arsc.flat
-³   ³   ³   ³               values-gu_values-gu.arsc.flat
-³   ³   ³   ³               values-hi_values-hi.arsc.flat
-³   ³   ³   ³               values-hr_values-hr.arsc.flat
-³   ³   ³   ³               values-hu_values-hu.arsc.flat
-³   ³   ³   ³               values-hy_values-hy.arsc.flat
-³   ³   ³   ³               values-in_values-in.arsc.flat
-³   ³   ³   ³               values-is_values-is.arsc.flat
-³   ³   ³   ³               values-it_values-it.arsc.flat
-³   ³   ³   ³               values-iw_values-iw.arsc.flat
-³   ³   ³   ³               values-ja_values-ja.arsc.flat
-³   ³   ³   ³               values-ka_values-ka.arsc.flat
-³   ³   ³   ³               values-kk_values-kk.arsc.flat
-³   ³   ³   ³               values-km_values-km.arsc.flat
-³   ³   ³   ³               values-kn_values-kn.arsc.flat
-³   ³   ³   ³               values-ko_values-ko.arsc.flat
-³   ³   ³   ³               values-ky_values-ky.arsc.flat
-³   ³   ³   ³               values-lo_values-lo.arsc.flat
-³   ³   ³   ³               values-lt_values-lt.arsc.flat
-³   ³   ³   ³               values-lv_values-lv.arsc.flat
-³   ³   ³   ³               values-mk_values-mk.arsc.flat
-³   ³   ³   ³               values-ml_values-ml.arsc.flat
-³   ³   ³   ³               values-mn_values-mn.arsc.flat
-³   ³   ³   ³               values-mr_values-mr.arsc.flat
-³   ³   ³   ³               values-ms_values-ms.arsc.flat
-³   ³   ³   ³               values-my_values-my.arsc.flat
-³   ³   ³   ³               values-nb_values-nb.arsc.flat
-³   ³   ³   ³               values-ne_values-ne.arsc.flat
-³   ³   ³   ³               values-nl_values-nl.arsc.flat
-³   ³   ³   ³               values-or_values-or.arsc.flat
-³   ³   ³   ³               values-pa_values-pa.arsc.flat
-³   ³   ³   ³               values-pl_values-pl.arsc.flat
-³   ³   ³   ³               values-pt-rBR_values-pt-rBR.arsc.flat
-³   ³   ³   ³               values-pt-rPT_values-pt-rPT.arsc.flat
-³   ³   ³   ³               values-pt_values-pt.arsc.flat
-³   ³   ³   ³               values-ro_values-ro.arsc.flat
-³   ³   ³   ³               values-ru_values-ru.arsc.flat
-³   ³   ³   ³               values-si_values-si.arsc.flat
-³   ³   ³   ³               values-sk_values-sk.arsc.flat
-³   ³   ³   ³               values-sl_values-sl.arsc.flat
-³   ³   ³   ³               values-sq_values-sq.arsc.flat
-³   ³   ³   ³               values-sr_values-sr.arsc.flat
-³   ³   ³   ³               values-sv_values-sv.arsc.flat
-³   ³   ³   ³               values-sw_values-sw.arsc.flat
-³   ³   ³   ³               values-ta_values-ta.arsc.flat
-³   ³   ³   ³               values-te_values-te.arsc.flat
-³   ³   ³   ³               values-th_values-th.arsc.flat
-³   ³   ³   ³               values-tl_values-tl.arsc.flat
-³   ³   ³   ³               values-tr_values-tr.arsc.flat
-³   ³   ³   ³               values-uk_values-uk.arsc.flat
-³   ³   ³   ³               values-ur_values-ur.arsc.flat
-³   ³   ³   ³               values-uz_values-uz.arsc.flat
-³   ³   ³   ³               values-v21_values-v21.arsc.flat
-³   ³   ³   ³               values-v30_values-v30.arsc.flat
-³   ³   ³   ³               values-vi_values-vi.arsc.flat
-³   ³   ³   ³               values-zh-rCN_values-zh-rCN.arsc.flat
-³   ³   ³   ³               values-zh-rHK_values-zh-rHK.arsc.flat
-³   ³   ³   ³               values-zh-rTW_values-zh-rTW.arsc.flat
-³   ³   ³   ³               values-zu_values-zu.arsc.flat
-³   ³   ³   ³               values_values.arsc.flat
-³   ³   ³   ³               xml_backup_rules.xml.flat
-³   ³   ³   ³               xml_data_extraction_rules.xml.flat
-³   ³   ³   ³               
-³   ³   ³   ÃÄÄÄmerged_res_blame_folder
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄmergeDebugResources
-³   ³   ³   ³           ÀÄÄÄout
-³   ³   ³   ³               ÃÄÄÄmulti-v2
-³   ³   ³   ³               ³       mergeDebugResources.json
-³   ³   ³   ³               ³       values-af.json
-³   ³   ³   ³               ³       values-am.json
-³   ³   ³   ³               ³       values-ar.json
-³   ³   ³   ³               ³       values-as.json
-³   ³   ³   ³               ³       values-az.json
-³   ³   ³   ³               ³       values-b+sr+Latn.json
-³   ³   ³   ³               ³       values-be.json
-³   ³   ³   ³               ³       values-bg.json
-³   ³   ³   ³               ³       values-bn.json
-³   ³   ³   ³               ³       values-bs.json
-³   ³   ³   ³               ³       values-ca.json
-³   ³   ³   ³               ³       values-cs.json
-³   ³   ³   ³               ³       values-da.json
-³   ³   ³   ³               ³       values-de.json
-³   ³   ³   ³               ³       values-el.json
-³   ³   ³   ³               ³       values-en-rAU.json
-³   ³   ³   ³               ³       values-en-rCA.json
-³   ³   ³   ³               ³       values-en-rGB.json
-³   ³   ³   ³               ³       values-en-rIN.json
-³   ³   ³   ³               ³       values-en-rXC.json
-³   ³   ³   ³               ³       values-es-rUS.json
-³   ³   ³   ³               ³       values-es.json
-³   ³   ³   ³               ³       values-et.json
-³   ³   ³   ³               ³       values-eu.json
-³   ³   ³   ³               ³       values-fa.json
-³   ³   ³   ³               ³       values-fi.json
-³   ³   ³   ³               ³       values-fr-rCA.json
-³   ³   ³   ³               ³       values-fr.json
-³   ³   ³   ³               ³       values-gl.json
-³   ³   ³   ³               ³       values-gu.json
-³   ³   ³   ³               ³       values-hi.json
-³   ³   ³   ³               ³       values-hr.json
-³   ³   ³   ³               ³       values-hu.json
-³   ³   ³   ³               ³       values-hy.json
-³   ³   ³   ³               ³       values-in.json
-³   ³   ³   ³               ³       values-is.json
-³   ³   ³   ³               ³       values-it.json
-³   ³   ³   ³               ³       values-iw.json
-³   ³   ³   ³               ³       values-ja.json
-³   ³   ³   ³               ³       values-ka.json
-³   ³   ³   ³               ³       values-kk.json
-³   ³   ³   ³               ³       values-km.json
-³   ³   ³   ³               ³       values-kn.json
-³   ³   ³   ³               ³       values-ko.json
-³   ³   ³   ³               ³       values-ky.json
-³   ³   ³   ³               ³       values-lo.json
-³   ³   ³   ³               ³       values-lt.json
-³   ³   ³   ³               ³       values-lv.json
-³   ³   ³   ³               ³       values-mk.json
-³   ³   ³   ³               ³       values-ml.json
-³   ³   ³   ³               ³       values-mn.json
-³   ³   ³   ³               ³       values-mr.json
-³   ³   ³   ³               ³       values-ms.json
-³   ³   ³   ³               ³       values-my.json
-³   ³   ³   ³               ³       values-nb.json
-³   ³   ³   ³               ³       values-ne.json
-³   ³   ³   ³               ³       values-nl.json
-³   ³   ³   ³               ³       values-or.json
-³   ³   ³   ³               ³       values-pa.json
-³   ³   ³   ³               ³       values-pl.json
-³   ³   ³   ³               ³       values-pt-rBR.json
-³   ³   ³   ³               ³       values-pt-rPT.json
-³   ³   ³   ³               ³       values-pt.json
-³   ³   ³   ³               ³       values-ro.json
-³   ³   ³   ³               ³       values-ru.json
-³   ³   ³   ³               ³       values-si.json
-³   ³   ³   ³               ³       values-sk.json
-³   ³   ³   ³               ³       values-sl.json
-³   ³   ³   ³               ³       values-sq.json
-³   ³   ³   ³               ³       values-sr.json
-³   ³   ³   ³               ³       values-sv.json
-³   ³   ³   ³               ³       values-sw.json
-³   ³   ³   ³               ³       values-ta.json
-³   ³   ³   ³               ³       values-te.json
-³   ³   ³   ³               ³       values-th.json
-³   ³   ³   ³               ³       values-tl.json
-³   ³   ³   ³               ³       values-tr.json
-³   ³   ³   ³               ³       values-uk.json
-³   ³   ³   ³               ³       values-ur.json
-³   ³   ³   ³               ³       values-uz.json
-³   ³   ³   ³               ³       values-v21.json
-³   ³   ³   ³               ³       values-v30.json
-³   ³   ³   ³               ³       values-vi.json
-³   ³   ³   ³               ³       values-zh-rCN.json
-³   ³   ³   ³               ³       values-zh-rHK.json
-³   ³   ³   ³               ³       values-zh-rTW.json
-³   ³   ³   ³               ³       values-zu.json
-³   ³   ³   ³               ³       values.json
-³   ³   ³   ³               ³       
-³   ³   ³   ³               ÀÄÄÄsingle
-³   ³   ³   ³                       mergeDebugResources.json
-³   ³   ³   ³                       
-³   ³   ³   ÃÄÄÄmerged_shaders
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄmergeDebugShaders
-³   ³   ³   ³           ÀÄÄÄout
-³   ³   ³   ÃÄÄÄmerged_test_only_native_libs
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄmergeDebugNativeLibs
-³   ³   ³   ³           ÀÄÄÄout
-³   ³   ³   ÃÄÄÄnavigation_json
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄextractDeepLinksDebug
-³   ³   ³   ³               navigation.json
-³   ³   ³   ³               
-³   ³   ³   ÃÄÄÄnested_resources_validation_report
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄgenerateDebugResources
-³   ³   ³   ³               nestedResourcesValidationReport.txt
-³   ³   ³   ³               
-³   ³   ³   ÃÄÄÄpackaged_manifests
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄprocessDebugManifestForPackage
-³   ³   ³   ³               AndroidManifest.xml
-³   ³   ³   ³               output-metadata.json
-³   ³   ³   ³               
-³   ³   ³   ÃÄÄÄpackaged_res
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄpackageDebugResources
-³   ³   ³   ³           ÃÄÄÄdrawable
-³   ³   ³   ³           ³       baseline_question_mark_24.xml
-³   ³   ³   ³           ³       gbc_cafeteria.jpg
-³   ³   ³   ³           ³       gbc_library.jpg
-³   ³   ³   ³           ³       gbc_logo.png
-³   ³   ³   ³           ³       gbc_main_entrance.jpg
-³   ³   ³   ³           ³       ic_launcher_background.xml
-³   ³   ³   ³           ³       ic_launcher_foreground.xml
-³   ³   ³   ³           ³       outline_group_24.xml
-³   ³   ³   ³           ³       outline_photo_24.xml
-³   ³   ³   ³           ³       outline_qr_code_24.xml
-³   ³   ³   ³           ³       outline_qr_code_scanner_24.xml
-³   ³   ³   ³           ³       
-³   ³   ³   ³           ÃÄÄÄmipmap-anydpi-v26
-³   ³   ³   ³           ³       ic_launcher.xml
-³   ³   ³   ³           ³       ic_launcher_round.xml
-³   ³   ³   ³           ³       
-³   ³   ³   ³           ÃÄÄÄmipmap-hdpi-v4
-³   ³   ³   ³           ³       ic_launcher.webp
-³   ³   ³   ³           ³       ic_launcher_round.webp
-³   ³   ³   ³           ³       
-³   ³   ³   ³           ÃÄÄÄmipmap-mdpi-v4
-³   ³   ³   ³           ³       ic_launcher.webp
-³   ³   ³   ³           ³       ic_launcher_round.webp
-³   ³   ³   ³           ³       
-³   ³   ³   ³           ÃÄÄÄmipmap-xhdpi-v4
-³   ³   ³   ³           ³       ic_launcher.webp
-³   ³   ³   ³           ³       ic_launcher_round.webp
-³   ³   ³   ³           ³       
-³   ³   ³   ³           ÃÄÄÄmipmap-xxhdpi-v4
-³   ³   ³   ³           ³       ic_launcher.webp
-³   ³   ³   ³           ³       ic_launcher_round.webp
-³   ³   ³   ³           ³       
-³   ³   ³   ³           ÃÄÄÄmipmap-xxxhdpi-v4
-³   ³   ³   ³           ³       ic_launcher.webp
-³   ³   ³   ³           ³       ic_launcher_round.webp
-³   ³   ³   ³           ³       
-³   ³   ³   ³           ÃÄÄÄvalues
-³   ³   ³   ³           ³       values.xml
-³   ³   ³   ³           ³       
-³   ³   ³   ³           ÀÄÄÄxml
-³   ³   ³   ³                   backup_rules.xml
-³   ³   ³   ³                   data_extraction_rules.xml
-³   ³   ³   ³                   
-³   ³   ³   ÃÄÄÄruntime_symbol_list
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄprocessDebugResources
-³   ³   ³   ³               R.txt
-³   ³   ³   ³               
-³   ³   ³   ÃÄÄÄsigning_config_versions
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄwriteDebugSigningConfigVersions
-³   ³   ³   ³               signing-config-versions.json
-³   ³   ³   ³               
-³   ³   ³   ÃÄÄÄsource_set_path_map
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄmapDebugSourceSetPaths
-³   ³   ³   ³               file-map.txt
-³   ³   ³   ³               
-³   ³   ³   ÃÄÄÄstable_resource_ids_file
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄprocessDebugResources
-³   ³   ³   ³               stableIds.txt
-³   ³   ³   ³               
-³   ³   ³   ÃÄÄÄstripped_native_libs
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄstripDebugDebugSymbols
-³   ³   ³   ³           ÀÄÄÄout
-³   ³   ³   ³               ÀÄÄÄlib
-³   ³   ³   ³                   ÃÄÄÄarm64-v8a
-³   ³   ³   ³                   ³       libandroidx.graphics.path.so
-³   ³   ³   ³                   ³       
-³   ³   ³   ³                   ÃÄÄÄarmeabi-v7a
-³   ³   ³   ³                   ³       libandroidx.graphics.path.so
-³   ³   ³   ³                   ³       
-³   ³   ³   ³                   ÃÄÄÄx86
-³   ³   ³   ³                   ³       libandroidx.graphics.path.so
-³   ³   ³   ³                   ³       
-³   ³   ³   ³                   ÀÄÄÄx86_64
-³   ³   ³   ³                           libandroidx.graphics.path.so
-³   ³   ³   ³                           
-³   ³   ³   ÃÄÄÄsymbol_list_with_package_name
-³   ³   ³   ³   ÀÄÄÄdebug
-³   ³   ³   ³       ÀÄÄÄprocessDebugResources
-³   ³   ³   ³               package-aware-r.txt
-³   ³   ³   ³               
-³   ³   ³   ÀÄÄÄvalidate_signing_config
-³   ³   ³       ÀÄÄÄdebug
-³   ³   ³           ÀÄÄÄvalidateSigningDebug
-³   ³   ÃÄÄÄkotlin
-³   ³   ³   ÀÄÄÄkspDebugKotlin
-³   ³   ³       ÃÄÄÄcacheable
-³   ³   ³       ÃÄÄÄclasspath-snapshot
-³   ³   ³       ÀÄÄÄlocal-state
-³   ³   ÃÄÄÄkspCaches
-³   ³   ³   ÀÄÄÄdebug
-³   ³   ³       ³   ap-classpath-entries.bin
-³   ³   ³       ³   classpath-entries.bin
-³   ³   ³       ³   classpath-structure.bin
-³   ³   ³       ³   sealed
-³   ³   ³       ³   sourceToOutputs
-³   ³   ³       ³   symbols
-³   ³   ³       ³   
-³   ³   ³       ÀÄÄÄlogs
-³   ³   ÀÄÄÄoutputs
-³   ³       ÀÄÄÄlogs
-³   ³               manifest-merger-debug-report.txt
-³   ³               
-³   ÀÄÄÄsrc
-³       ÃÄÄÄandroidTest
-³       ³   ÀÄÄÄjava
-³       ³       ÀÄÄÄcom
-³       ³           ÀÄÄÄexample
-³       ³               ÀÄÄÄtreasurely
-³       ³                       ExampleInstrumentedTest.kt
-³       ³                       
-³       ÃÄÄÄmain
-³       ³   ³   AndroidManifest.xml
-³       ³   ³   
-³       ³   ÃÄÄÄjava
-³       ³   ³   ÀÄÄÄcom
-³       ³   ³       ÀÄÄÄexample
-³       ³   ³           ÀÄÄÄtreasurely
-³       ³   ³               ³   Dashboard.kt
-³       ³   ³               ³   MainActivity.kt
-³       ³   ³               ³   NavBar.kt
-³       ³   ³               ³   
-³       ³   ³               ÃÄÄÄclue
-³       ³   ³               ³       Clues.kt
-³       ³   ³               ³       QRCodeScanner.kt
-³       ³   ³               ³       
-³       ³   ³               ÃÄÄÄdata
-³       ³   ³               ³   ÃÄÄÄdb
-³       ³   ³               ³   ³   ³   TreasurelyDatabase.kt
-³       ³   ³               ³   ³   ³   
-³       ³   ³               ³   ³   ÃÄÄÄdao
-³       ³   ³               ³   ³   ³       ClueDao.kt
-³       ³   ³               ³   ³   ³       TreasureHuntDao.kt
-³       ³   ³               ³   ³   ³       UserDao.kt
-³       ³   ³               ³   ³   ³       UserTreasureHuntDao.kt
-³       ³   ³               ³   ³   ³       
-³       ³   ³               ³   ³   ÃÄÄÄentities
-³       ³   ³               ³   ³   ³       Clue.kt
-³       ³   ³               ³   ³   ³       TreasureHunt.kt
-³       ³   ³               ³   ³   ³       User.kt
-³       ³   ³               ³   ³   ³       
-³       ³   ³               ³   ³   ÃÄÄÄrelations
-³       ³   ³               ³   ³   ³       TreasureHuntWithUsers.kt
-³       ³   ³               ³   ³   ³       UserTreasureHuntCrossRef.kt
-³       ³   ³               ³   ³   ³       UserWithTreasureHunts.kt
-³       ³   ³               ³   ³   ³       
-³       ³   ³               ³   ³   ÀÄÄÄutilities
-³       ³   ³               ³   ³           DateTimeConverter.kt
-³       ³   ³               ³   ³           PasswordUtils.kt
-³       ³   ³               ³   ³           TreasureHuntJoinCodeGenerator.kt
-³       ³   ³               ³   ³           
-³       ³   ³               ³   ÀÄÄÄrepository
-³       ³   ³               ³           ClueRepository.kt
-³       ³   ³               ³           TreasureHuntRepository.kt
-³       ³   ³               ³           UserRepository.kt
-³       ³   ³               ³           
-³       ³   ³               ÃÄÄÄtreasure
-³       ³   ³               ³   ÀÄÄÄhunt
-³       ³   ³               ³           Create.kt
-³       ³   ³               ³           Details.kt
-³       ³   ³               ³           Join.kt
-³       ³   ³               ³           
-³       ³   ³               ÃÄÄÄui
-³       ³   ³               ³   ÀÄÄÄtheme
-³       ³   ³               ³           Color.kt
-³       ³   ³               ³           Theme.kt
-³       ³   ³               ³           Type.kt
-³       ³   ³               ³           
-³       ³   ³               ÃÄÄÄuser
-³       ³   ³               ³       Login.kt
-³       ³   ³               ³       Profile.kt
-³       ³   ³               ³       Registration.kt
-³       ³   ³               ³       
-³       ³   ³               ÀÄÄÄviewmodel
-³       ³   ³                       TreasureHuntViewModel.kt
-³       ³   ³                       UserViewModel.kt
-³       ³   ³                       
-³       ³   ÀÄÄÄres
-³       ³       ³   drawable.zip
-³       ³       ³   
-³       ³       ÃÄÄÄdrawable
-³       ³       ³       baseline_question_mark_24.xml
-³       ³       ³       gbc_cafeteria.jpg
-³       ³       ³       gbc_library.jpg
-³       ³       ³       gbc_logo.png
-³       ³       ³       gbc_main_entrance.jpg
-³       ³       ³       ic_launcher_background.xml
-³       ³       ³       ic_launcher_foreground.xml
-³       ³       ³       outline_group_24.xml
-³       ³       ³       outline_photo_24.xml
-³       ³       ³       outline_qr_code_24.xml
-³       ³       ³       outline_qr_code_scanner_24.xml
-³       ³       ³       
-³       ³       ÃÄÄÄmipmap-anydpi-v26
-³       ³       ³       ic_launcher.xml
-³       ³       ³       ic_launcher_round.xml
-³       ³       ³       
-³       ³       ÃÄÄÄmipmap-hdpi
-³       ³       ³       ic_launcher.webp
-³       ³       ³       ic_launcher_round.webp
-³       ³       ³       
-³       ³       ÃÄÄÄmipmap-mdpi
-³       ³       ³       ic_launcher.webp
-³       ³       ³       ic_launcher_round.webp
-³       ³       ³       
-³       ³       ÃÄÄÄmipmap-xhdpi
-³       ³       ³       ic_launcher.webp
-³       ³       ³       ic_launcher_round.webp
-³       ³       ³       
-³       ³       ÃÄÄÄmipmap-xxhdpi
-³       ³       ³       ic_launcher.webp
-³       ³       ³       ic_launcher_round.webp
-³       ³       ³       
-³       ³       ÃÄÄÄmipmap-xxxhdpi
-³       ³       ³       ic_launcher.webp
-³       ³       ³       ic_launcher_round.webp
-³       ³       ³       
-³       ³       ÃÄÄÄvalues
-³       ³       ³       colors.xml
-³       ³       ³       strings.xml
-³       ³       ³       themes.xml
-³       ³       ³       
-³       ³       ÀÄÄÄxml
-³       ³               backup_rules.xml
-³       ³               data_extraction_rules.xml
-³       ³               
-³       ÀÄÄÄtest
-³           ÀÄÄÄjava
-³               ÀÄÄÄcom
-³                   ÀÄÄÄexample
-³                       ÀÄÄÄtreasurely
-³                               ExampleUnitTest.kt
-³                               
-ÀÄÄÄgradle
-    ³   libs.versions.toml
-    ³   
-    ÀÄÄÄwrapper
+ï¿½   .gitignore
+ï¿½   build.gradle.kts
+ï¿½   gradle.properties
+ï¿½   gradlew
+ï¿½   gradlew.bat
+ï¿½   local.properties
+ï¿½   project_structure.txt
+ï¿½   settings.gradle.kts
+ï¿½   
+ï¿½ï¿½ï¿½ï¿½.gradle
+ï¿½   ï¿½   config.properties
+ï¿½   ï¿½   file-system.probe
+ï¿½   ï¿½   
+ï¿½   ï¿½ï¿½ï¿½ï¿½8.13
+ï¿½   ï¿½   ï¿½   gc.properties
+ï¿½   ï¿½   ï¿½   
+ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½checksums
+ï¿½   ï¿½   ï¿½       checksums.lock
+ï¿½   ï¿½   ï¿½       md5-checksums.bin
+ï¿½   ï¿½   ï¿½       sha1-checksums.bin
+ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½executionHistory
+ï¿½   ï¿½   ï¿½       executionHistory.bin
+ï¿½   ï¿½   ï¿½       executionHistory.lock
+ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½expanded
+ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½fileChanges
+ï¿½   ï¿½   ï¿½       last-build.bin
+ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½fileHashes
+ï¿½   ï¿½   ï¿½       fileHashes.bin
+ï¿½   ï¿½   ï¿½       fileHashes.lock
+ï¿½   ï¿½   ï¿½       resourceHashesCache.bin
+ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½vcsMetadata
+ï¿½   ï¿½ï¿½ï¿½ï¿½buildOutputCleanup
+ï¿½   ï¿½       buildOutputCleanup.lock
+ï¿½   ï¿½       cache.properties
+ï¿½   ï¿½       outputFiles.bin
+ï¿½   ï¿½       
+ï¿½   ï¿½ï¿½ï¿½ï¿½vcs-1
+ï¿½           gc.properties
+ï¿½           
+ï¿½ï¿½ï¿½ï¿½.idea
+ï¿½   ï¿½   .gitignore
+ï¿½   ï¿½   .name
+ï¿½   ï¿½   AndroidProjectSystem.xml
+ï¿½   ï¿½   appInsightsSettings.xml
+ï¿½   ï¿½   assetWizardSettings.xml
+ï¿½   ï¿½   compiler.xml
+ï¿½   ï¿½   deploymentTargetSelector.xml
+ï¿½   ï¿½   deviceManager.xml
+ï¿½   ï¿½   gradle.xml
+ï¿½   ï¿½   migrations.xml
+ï¿½   ï¿½   misc.xml
+ï¿½   ï¿½   runConfigurations.xml
+ï¿½   ï¿½   vcs.xml
+ï¿½   ï¿½   workspace.xml
+ï¿½   ï¿½   
+ï¿½   ï¿½ï¿½ï¿½ï¿½caches
+ï¿½   ï¿½       deviceStreaming.xml
+ï¿½   ï¿½       
+ï¿½   ï¿½ï¿½ï¿½ï¿½inspectionProfiles
+ï¿½   ï¿½       Project_Default.xml
+ï¿½   ï¿½       
+ï¿½   ï¿½ï¿½ï¿½ï¿½modules
+ï¿½       ï¿½ï¿½ï¿½ï¿½app
+ï¿½ï¿½ï¿½ï¿½.kotlin
+ï¿½   ï¿½ï¿½ï¿½ï¿½sessions
+ï¿½ï¿½ï¿½ï¿½app
+ï¿½   ï¿½   .gitignore
+ï¿½   ï¿½   build.gradle.kts
+ï¿½   ï¿½   proguard-rules.pro
+ï¿½   ï¿½   
+ï¿½   ï¿½ï¿½ï¿½ï¿½build
+ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½generated
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½ksp
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½   ï¿½ï¿½ï¿½ï¿½com
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       ï¿½ï¿½ï¿½ï¿½example
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½           ï¿½ï¿½ï¿½ï¿½treasurely
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½               ï¿½ï¿½ï¿½ï¿½data
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½                   ï¿½ï¿½ï¿½ï¿½db
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½                       ï¿½   TreasurelyDatabase_Impl.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½                       ï¿½   
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½                       ï¿½ï¿½ï¿½ï¿½dao
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½                               TreasureHuntDao_Impl.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½                               UserDao_Impl.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½                               UserTreasureHuntDao_Impl.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½                               
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½kotlin
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½res
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½pngs
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½resValues
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½updated_navigation_xml
+ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½intermediates
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½aar_metadata_check
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½checkDebugAarMetadata
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½annotation_processor_list
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½javaPreCompileDebug
+ï¿½   ï¿½   ï¿½   ï¿½               annotationProcessors.json
+ï¿½   ï¿½   ï¿½   ï¿½               
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½app_metadata
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½writeDebugAppMetadata
+ï¿½   ï¿½   ï¿½   ï¿½               app-metadata.properties
+ï¿½   ï¿½   ï¿½   ï¿½               
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½assets
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½mergeDebugAssets
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½compatible_screen_manifest
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½createDebugCompatibleScreenManifests
+ï¿½   ï¿½   ï¿½   ï¿½               output-metadata.json
+ï¿½   ï¿½   ï¿½   ï¿½               
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½compiled_navigation_res
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½compileDebugNavigationResources
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½compile_and_runtime_not_namespaced_r_class_jar
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½processDebugResources
+ï¿½   ï¿½   ï¿½   ï¿½               R.jar
+ï¿½   ï¿½   ï¿½   ï¿½               
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½compressed_assets
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½compressDebugAssets
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½out
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½data_binding_layout_info_type_merge
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½mergeDebugResources
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½out
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½data_binding_layout_info_type_package
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½packageDebugResources
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½out
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½desugar_lib_dex
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½l8DexDesugarLibDebug
+ï¿½   ï¿½   ï¿½   ï¿½               classes1000.dex
+ï¿½   ï¿½   ï¿½   ï¿½               
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½dex
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½mergeExtDexDebug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       classes.dex
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       classes2.dex
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½mergeLibDexDebug
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½0
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½1
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½10
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½11
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½12
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½13
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½14
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½15
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½2
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½3
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½4
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½5
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½6
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½7
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½8
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½9
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½duplicate_classes_check
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½checkDebugDuplicateClasses
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½external_file_lib_dex_archives
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½desugarDebugFileDependencies
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½incremental
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½mergeDebugResources
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   compile-file-map.properties
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   merger.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½merged.dir
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-af
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-af.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-am
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-am.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-ar
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-ar.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-as
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-as.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-az
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-az.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-b+sr+Latn
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-b+sr+Latn.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-be
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-be.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-bg
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-bg.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-bn
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-bn.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-bs
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-bs.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-ca
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-ca.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-cs
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-cs.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-da
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-da.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-de
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-de.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-el
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-el.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-en-rAU
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-en-rAU.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-en-rCA
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-en-rCA.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-en-rGB
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-en-rGB.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-en-rIN
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-en-rIN.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-en-rXC
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-en-rXC.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-es
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-es.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-es-rUS
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-es-rUS.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-et
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-et.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-eu
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-eu.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-fa
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-fa.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-fi
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-fi.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-fr
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-fr.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-fr-rCA
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-fr-rCA.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-gl
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-gl.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-gu
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-gu.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-hi
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-hi.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-hr
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-hr.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-hu
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-hu.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-hy
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-hy.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-in
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-in.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-is
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-is.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-it
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-it.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-iw
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-iw.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-ja
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-ja.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-ka
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-ka.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-kk
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-kk.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-km
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-km.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-kn
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-kn.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-ko
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-ko.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-ky
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-ky.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-lo
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-lo.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-lt
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-lt.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-lv
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-lv.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-mk
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-mk.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-ml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-ml.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-mn
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-mn.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-mr
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-mr.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-ms
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-ms.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-my
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-my.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-nb
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-nb.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-ne
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-ne.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-nl
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-nl.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-or
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-or.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-pa
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-pa.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-pl
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-pl.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-pt
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-pt.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-pt-rBR
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-pt-rBR.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-pt-rPT
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-pt-rPT.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-ro
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-ro.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-ru
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-ru.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-si
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-si.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-sk
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-sk.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-sl
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-sl.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-sq
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-sq.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-sr
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-sr.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-sv
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-sv.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-sw
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-sw.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-ta
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-ta.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-te
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-te.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-th
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-th.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-tl
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-tl.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-tr
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-tr.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-uk
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-uk.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-ur
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-ur.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-uz
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-uz.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-v21
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-v21.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-v30
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-v30.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-vi
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-vi.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-zh-rCN
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-zh-rCN.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-zh-rHK
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-zh-rHK.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-zh-rTW
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       values-zh-rTW.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½values-zu
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½           values-zu.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½           
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½stripped.dir
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½packageDebugResources
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       ï¿½   compile-file-map.properties
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       ï¿½   merger.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       ï¿½   
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½merged.dir
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       ï¿½   ï¿½ï¿½ï¿½ï¿½values
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       ï¿½           values.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       ï¿½           
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½stripped.dir
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½mergeDebugAssets
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       merger.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½mergeDebugJniLibFolders
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       merger.xml
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½mergeDebugShaders
+ï¿½   ï¿½   ï¿½   ï¿½           merger.xml
+ï¿½   ï¿½   ï¿½   ï¿½           
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½l8_art_profile
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½l8DexDesugarLibDebug
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½linked_resources_binary_format
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½processDebugResources
+ï¿½   ï¿½   ï¿½   ï¿½               linked-resources-binary-format-debug.ap_
+ï¿½   ï¿½   ï¿½   ï¿½               output-metadata.json
+ï¿½   ï¿½   ï¿½   ï¿½               
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½local_only_symbol_list
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½parseDebugLocalResources
+ï¿½   ï¿½   ï¿½   ï¿½               R-def.txt
+ï¿½   ï¿½   ï¿½   ï¿½               
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½manifest_merge_blame_file
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½processDebugMainManifest
+ï¿½   ï¿½   ï¿½   ï¿½               manifest-merger-blame-debug-report.txt
+ï¿½   ï¿½   ï¿½   ï¿½               
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½merged_jni_libs
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½mergeDebugJniLibFolders
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½out
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½merged_manifest
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½processDebugMainManifest
+ï¿½   ï¿½   ï¿½   ï¿½               AndroidManifest.xml
+ï¿½   ï¿½   ï¿½   ï¿½               
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½merged_manifests
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½processDebugManifest
+ï¿½   ï¿½   ï¿½   ï¿½               AndroidManifest.xml
+ï¿½   ï¿½   ï¿½   ï¿½               output-metadata.json
+ï¿½   ï¿½   ï¿½   ï¿½               
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½merged_native_libs
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½mergeDebugNativeLibs
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½out
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½ï¿½ï¿½ï¿½lib
+ï¿½   ï¿½   ï¿½   ï¿½                   ï¿½ï¿½ï¿½ï¿½arm64-v8a
+ï¿½   ï¿½   ï¿½   ï¿½                   ï¿½       libandroidx.graphics.path.so
+ï¿½   ï¿½   ï¿½   ï¿½                   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½                   ï¿½ï¿½ï¿½ï¿½armeabi-v7a
+ï¿½   ï¿½   ï¿½   ï¿½                   ï¿½       libandroidx.graphics.path.so
+ï¿½   ï¿½   ï¿½   ï¿½                   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½                   ï¿½ï¿½ï¿½ï¿½x86
+ï¿½   ï¿½   ï¿½   ï¿½                   ï¿½       libandroidx.graphics.path.so
+ï¿½   ï¿½   ï¿½   ï¿½                   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½                   ï¿½ï¿½ï¿½ï¿½x86_64
+ï¿½   ï¿½   ï¿½   ï¿½                           libandroidx.graphics.path.so
+ï¿½   ï¿½   ï¿½   ï¿½                           
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½merged_res
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½mergeDebugResources
+ï¿½   ï¿½   ï¿½   ï¿½               drawable_baseline_question_mark_24.xml.flat
+ï¿½   ï¿½   ï¿½   ï¿½               drawable_gbc_cafeteria.jpg.flat
+ï¿½   ï¿½   ï¿½   ï¿½               drawable_gbc_library.jpg.flat
+ï¿½   ï¿½   ï¿½   ï¿½               drawable_gbc_logo.png.flat
+ï¿½   ï¿½   ï¿½   ï¿½               drawable_gbc_main_entrance.jpg.flat
+ï¿½   ï¿½   ï¿½   ï¿½               drawable_ic_launcher_background.xml.flat
+ï¿½   ï¿½   ï¿½   ï¿½               drawable_ic_launcher_foreground.xml.flat
+ï¿½   ï¿½   ï¿½   ï¿½               drawable_outline_group_24.xml.flat
+ï¿½   ï¿½   ï¿½   ï¿½               drawable_outline_photo_24.xml.flat
+ï¿½   ï¿½   ï¿½   ï¿½               drawable_outline_qr_code_24.xml.flat
+ï¿½   ï¿½   ï¿½   ï¿½               drawable_outline_qr_code_scanner_24.xml.flat
+ï¿½   ï¿½   ï¿½   ï¿½               mipmap-anydpi-v26_ic_launcher.xml.flat
+ï¿½   ï¿½   ï¿½   ï¿½               mipmap-anydpi-v26_ic_launcher_round.xml.flat
+ï¿½   ï¿½   ï¿½   ï¿½               mipmap-hdpi_ic_launcher.webp.flat
+ï¿½   ï¿½   ï¿½   ï¿½               mipmap-hdpi_ic_launcher_round.webp.flat
+ï¿½   ï¿½   ï¿½   ï¿½               mipmap-mdpi_ic_launcher.webp.flat
+ï¿½   ï¿½   ï¿½   ï¿½               mipmap-mdpi_ic_launcher_round.webp.flat
+ï¿½   ï¿½   ï¿½   ï¿½               mipmap-xhdpi_ic_launcher.webp.flat
+ï¿½   ï¿½   ï¿½   ï¿½               mipmap-xhdpi_ic_launcher_round.webp.flat
+ï¿½   ï¿½   ï¿½   ï¿½               mipmap-xxhdpi_ic_launcher.webp.flat
+ï¿½   ï¿½   ï¿½   ï¿½               mipmap-xxhdpi_ic_launcher_round.webp.flat
+ï¿½   ï¿½   ï¿½   ï¿½               mipmap-xxxhdpi_ic_launcher.webp.flat
+ï¿½   ï¿½   ï¿½   ï¿½               mipmap-xxxhdpi_ic_launcher_round.webp.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-af_values-af.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-am_values-am.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-ar_values-ar.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-as_values-as.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-az_values-az.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-b+sr+Latn_values-b+sr+Latn.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-be_values-be.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-bg_values-bg.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-bn_values-bn.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-bs_values-bs.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-ca_values-ca.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-cs_values-cs.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-da_values-da.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-de_values-de.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-el_values-el.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-en-rAU_values-en-rAU.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-en-rCA_values-en-rCA.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-en-rGB_values-en-rGB.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-en-rIN_values-en-rIN.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-en-rXC_values-en-rXC.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-es-rUS_values-es-rUS.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-es_values-es.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-et_values-et.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-eu_values-eu.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-fa_values-fa.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-fi_values-fi.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-fr-rCA_values-fr-rCA.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-fr_values-fr.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-gl_values-gl.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-gu_values-gu.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-hi_values-hi.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-hr_values-hr.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-hu_values-hu.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-hy_values-hy.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-in_values-in.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-is_values-is.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-it_values-it.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-iw_values-iw.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-ja_values-ja.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-ka_values-ka.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-kk_values-kk.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-km_values-km.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-kn_values-kn.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-ko_values-ko.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-ky_values-ky.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-lo_values-lo.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-lt_values-lt.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-lv_values-lv.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-mk_values-mk.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-ml_values-ml.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-mn_values-mn.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-mr_values-mr.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-ms_values-ms.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-my_values-my.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-nb_values-nb.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-ne_values-ne.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-nl_values-nl.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-or_values-or.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-pa_values-pa.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-pl_values-pl.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-pt-rBR_values-pt-rBR.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-pt-rPT_values-pt-rPT.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-pt_values-pt.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-ro_values-ro.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-ru_values-ru.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-si_values-si.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-sk_values-sk.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-sl_values-sl.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-sq_values-sq.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-sr_values-sr.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-sv_values-sv.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-sw_values-sw.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-ta_values-ta.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-te_values-te.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-th_values-th.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-tl_values-tl.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-tr_values-tr.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-uk_values-uk.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-ur_values-ur.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-uz_values-uz.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-v21_values-v21.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-v30_values-v30.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-vi_values-vi.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-zh-rCN_values-zh-rCN.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-zh-rHK_values-zh-rHK.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-zh-rTW_values-zh-rTW.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values-zu_values-zu.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               values_values.arsc.flat
+ï¿½   ï¿½   ï¿½   ï¿½               xml_backup_rules.xml.flat
+ï¿½   ï¿½   ï¿½   ï¿½               xml_data_extraction_rules.xml.flat
+ï¿½   ï¿½   ï¿½   ï¿½               
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½merged_res_blame_folder
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½mergeDebugResources
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½out
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½ï¿½ï¿½ï¿½multi-v2
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       mergeDebugResources.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-af.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-am.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-ar.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-as.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-az.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-b+sr+Latn.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-be.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-bg.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-bn.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-bs.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-ca.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-cs.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-da.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-de.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-el.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-en-rAU.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-en-rCA.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-en-rGB.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-en-rIN.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-en-rXC.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-es-rUS.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-es.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-et.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-eu.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-fa.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-fi.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-fr-rCA.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-fr.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-gl.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-gu.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-hi.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-hr.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-hu.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-hy.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-in.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-is.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-it.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-iw.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-ja.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-ka.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-kk.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-km.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-kn.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-ko.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-ky.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-lo.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-lt.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-lv.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-mk.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-ml.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-mn.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-mr.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-ms.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-my.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-nb.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-ne.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-nl.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-or.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-pa.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-pl.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-pt-rBR.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-pt-rPT.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-pt.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-ro.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-ru.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-si.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-sk.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-sl.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-sq.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-sr.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-sv.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-sw.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-ta.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-te.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-th.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-tl.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-tr.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-uk.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-ur.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-uz.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-v21.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-v30.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-vi.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-zh-rCN.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-zh-rHK.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-zh-rTW.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values-zu.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       values.json
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½ï¿½ï¿½ï¿½single
+ï¿½   ï¿½   ï¿½   ï¿½                       mergeDebugResources.json
+ï¿½   ï¿½   ï¿½   ï¿½                       
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½merged_shaders
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½mergeDebugShaders
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½out
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½merged_test_only_native_libs
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½mergeDebugNativeLibs
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½out
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½navigation_json
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½extractDeepLinksDebug
+ï¿½   ï¿½   ï¿½   ï¿½               navigation.json
+ï¿½   ï¿½   ï¿½   ï¿½               
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½nested_resources_validation_report
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½generateDebugResources
+ï¿½   ï¿½   ï¿½   ï¿½               nestedResourcesValidationReport.txt
+ï¿½   ï¿½   ï¿½   ï¿½               
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½packaged_manifests
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½processDebugManifestForPackage
+ï¿½   ï¿½   ï¿½   ï¿½               AndroidManifest.xml
+ï¿½   ï¿½   ï¿½   ï¿½               output-metadata.json
+ï¿½   ï¿½   ï¿½   ï¿½               
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½packaged_res
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½packageDebugResources
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½drawable
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       baseline_question_mark_24.xml
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       gbc_cafeteria.jpg
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       gbc_library.jpg
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       gbc_logo.png
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       gbc_main_entrance.jpg
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       ic_launcher_background.xml
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       ic_launcher_foreground.xml
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       outline_group_24.xml
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       outline_photo_24.xml
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       outline_qr_code_24.xml
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       outline_qr_code_scanner_24.xml
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½mipmap-anydpi-v26
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       ic_launcher.xml
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       ic_launcher_round.xml
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½mipmap-hdpi-v4
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       ic_launcher.webp
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       ic_launcher_round.webp
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½mipmap-mdpi-v4
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       ic_launcher.webp
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       ic_launcher_round.webp
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½mipmap-xhdpi-v4
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       ic_launcher.webp
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       ic_launcher_round.webp
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½mipmap-xxhdpi-v4
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       ic_launcher.webp
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       ic_launcher_round.webp
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½mipmap-xxxhdpi-v4
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       ic_launcher.webp
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       ic_launcher_round.webp
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½values
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       values.xml
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½xml
+ï¿½   ï¿½   ï¿½   ï¿½                   backup_rules.xml
+ï¿½   ï¿½   ï¿½   ï¿½                   data_extraction_rules.xml
+ï¿½   ï¿½   ï¿½   ï¿½                   
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½runtime_symbol_list
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½processDebugResources
+ï¿½   ï¿½   ï¿½   ï¿½               R.txt
+ï¿½   ï¿½   ï¿½   ï¿½               
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½signing_config_versions
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½writeDebugSigningConfigVersions
+ï¿½   ï¿½   ï¿½   ï¿½               signing-config-versions.json
+ï¿½   ï¿½   ï¿½   ï¿½               
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½source_set_path_map
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½mapDebugSourceSetPaths
+ï¿½   ï¿½   ï¿½   ï¿½               file-map.txt
+ï¿½   ï¿½   ï¿½   ï¿½               
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½stable_resource_ids_file
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½processDebugResources
+ï¿½   ï¿½   ï¿½   ï¿½               stableIds.txt
+ï¿½   ï¿½   ï¿½   ï¿½               
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½stripped_native_libs
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½stripDebugDebugSymbols
+ï¿½   ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½out
+ï¿½   ï¿½   ï¿½   ï¿½               ï¿½ï¿½ï¿½ï¿½lib
+ï¿½   ï¿½   ï¿½   ï¿½                   ï¿½ï¿½ï¿½ï¿½arm64-v8a
+ï¿½   ï¿½   ï¿½   ï¿½                   ï¿½       libandroidx.graphics.path.so
+ï¿½   ï¿½   ï¿½   ï¿½                   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½                   ï¿½ï¿½ï¿½ï¿½armeabi-v7a
+ï¿½   ï¿½   ï¿½   ï¿½                   ï¿½       libandroidx.graphics.path.so
+ï¿½   ï¿½   ï¿½   ï¿½                   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½                   ï¿½ï¿½ï¿½ï¿½x86
+ï¿½   ï¿½   ï¿½   ï¿½                   ï¿½       libandroidx.graphics.path.so
+ï¿½   ï¿½   ï¿½   ï¿½                   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½                   ï¿½ï¿½ï¿½ï¿½x86_64
+ï¿½   ï¿½   ï¿½   ï¿½                           libandroidx.graphics.path.so
+ï¿½   ï¿½   ï¿½   ï¿½                           
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½symbol_list_with_package_name
+ï¿½   ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½processDebugResources
+ï¿½   ï¿½   ï¿½   ï¿½               package-aware-r.txt
+ï¿½   ï¿½   ï¿½   ï¿½               
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½validate_signing_config
+ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½validateSigningDebug
+ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½kotlin
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½kspDebugKotlin
+ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½cacheable
+ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½classpath-snapshot
+ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½local-state
+ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½kspCaches
+ï¿½   ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½debug
+ï¿½   ï¿½   ï¿½       ï¿½   ap-classpath-entries.bin
+ï¿½   ï¿½   ï¿½       ï¿½   classpath-entries.bin
+ï¿½   ï¿½   ï¿½       ï¿½   classpath-structure.bin
+ï¿½   ï¿½   ï¿½       ï¿½   sealed
+ï¿½   ï¿½   ï¿½       ï¿½   sourceToOutputs
+ï¿½   ï¿½   ï¿½       ï¿½   symbols
+ï¿½   ï¿½   ï¿½       ï¿½   
+ï¿½   ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½logs
+ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½outputs
+ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½logs
+ï¿½   ï¿½               manifest-merger-debug-report.txt
+ï¿½   ï¿½               
+ï¿½   ï¿½ï¿½ï¿½ï¿½src
+ï¿½       ï¿½ï¿½ï¿½ï¿½androidTest
+ï¿½       ï¿½   ï¿½ï¿½ï¿½ï¿½java
+ï¿½       ï¿½       ï¿½ï¿½ï¿½ï¿½com
+ï¿½       ï¿½           ï¿½ï¿½ï¿½ï¿½example
+ï¿½       ï¿½               ï¿½ï¿½ï¿½ï¿½treasurely
+ï¿½       ï¿½                       ExampleInstrumentedTest.kt
+ï¿½       ï¿½                       
+ï¿½       ï¿½ï¿½ï¿½ï¿½main
+ï¿½       ï¿½   ï¿½   AndroidManifest.xml
+ï¿½       ï¿½   ï¿½   
+ï¿½       ï¿½   ï¿½ï¿½ï¿½ï¿½java
+ï¿½       ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½com
+ï¿½       ï¿½   ï¿½       ï¿½ï¿½ï¿½ï¿½example
+ï¿½       ï¿½   ï¿½           ï¿½ï¿½ï¿½ï¿½treasurely
+ï¿½       ï¿½   ï¿½               ï¿½   Dashboard.kt
+ï¿½       ï¿½   ï¿½               ï¿½   MainActivity.kt
+ï¿½       ï¿½   ï¿½               ï¿½   NavBar.kt
+ï¿½       ï¿½   ï¿½               ï¿½   
+ï¿½       ï¿½   ï¿½               ï¿½ï¿½ï¿½ï¿½clue
+ï¿½       ï¿½   ï¿½               ï¿½       Clues.kt
+ï¿½       ï¿½   ï¿½               ï¿½       QRCodeScanner.kt
+ï¿½       ï¿½   ï¿½               ï¿½       
+ï¿½       ï¿½   ï¿½               ï¿½ï¿½ï¿½ï¿½data
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½ï¿½ï¿½ï¿½db
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½   ï¿½   TreasurelyDatabase.kt
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½   ï¿½   
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½dao
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½   ï¿½       ClueDao.kt
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½   ï¿½       TreasureHuntDao.kt
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½   ï¿½       UserDao.kt
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½   ï¿½       UserTreasureHuntDao.kt
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½   ï¿½       
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½entities
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½   ï¿½       Clue.kt
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½   ï¿½       TreasureHunt.kt
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½   ï¿½       User.kt
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½   ï¿½       
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½relations
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½   ï¿½       TreasureHuntWithUsers.kt
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½   ï¿½       UserTreasureHuntCrossRef.kt
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½   ï¿½       UserWithTreasureHunts.kt
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½   ï¿½       
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½   ï¿½ï¿½ï¿½ï¿½utilities
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½           DateTimeConverter.kt
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½           PasswordUtils.kt
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½           TreasureHuntJoinCodeGenerator.kt
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½           
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½ï¿½ï¿½ï¿½repository
+ï¿½       ï¿½   ï¿½               ï¿½           ClueRepositoryImpl.kt
+ï¿½       ï¿½   ï¿½               ï¿½           TreasureHuntRepository.kt
+ï¿½       ï¿½   ï¿½               ï¿½           UserRepository.kt
+ï¿½       ï¿½   ï¿½               ï¿½           
+ï¿½       ï¿½   ï¿½               ï¿½ï¿½ï¿½ï¿½treasure
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½ï¿½ï¿½ï¿½hunt
+ï¿½       ï¿½   ï¿½               ï¿½           Create.kt
+ï¿½       ï¿½   ï¿½               ï¿½           Details.kt
+ï¿½       ï¿½   ï¿½               ï¿½           Join.kt
+ï¿½       ï¿½   ï¿½               ï¿½           
+ï¿½       ï¿½   ï¿½               ï¿½ï¿½ï¿½ï¿½ui
+ï¿½       ï¿½   ï¿½               ï¿½   ï¿½ï¿½ï¿½ï¿½theme
+ï¿½       ï¿½   ï¿½               ï¿½           Color.kt
+ï¿½       ï¿½   ï¿½               ï¿½           Theme.kt
+ï¿½       ï¿½   ï¿½               ï¿½           Type.kt
+ï¿½       ï¿½   ï¿½               ï¿½           
+ï¿½       ï¿½   ï¿½               ï¿½ï¿½ï¿½ï¿½user
+ï¿½       ï¿½   ï¿½               ï¿½       Login.kt
+ï¿½       ï¿½   ï¿½               ï¿½       Profile.kt
+ï¿½       ï¿½   ï¿½               ï¿½       Registration.kt
+ï¿½       ï¿½   ï¿½               ï¿½       
+ï¿½       ï¿½   ï¿½               ï¿½ï¿½ï¿½ï¿½viewmodel
+ï¿½       ï¿½   ï¿½                       TreasureHuntViewModel.kt
+ï¿½       ï¿½   ï¿½                       UserViewModel.kt
+ï¿½       ï¿½   ï¿½                       
+ï¿½       ï¿½   ï¿½ï¿½ï¿½ï¿½res
+ï¿½       ï¿½       ï¿½   drawable.zip
+ï¿½       ï¿½       ï¿½   
+ï¿½       ï¿½       ï¿½ï¿½ï¿½ï¿½drawable
+ï¿½       ï¿½       ï¿½       baseline_question_mark_24.xml
+ï¿½       ï¿½       ï¿½       gbc_cafeteria.jpg
+ï¿½       ï¿½       ï¿½       gbc_library.jpg
+ï¿½       ï¿½       ï¿½       gbc_logo.png
+ï¿½       ï¿½       ï¿½       gbc_main_entrance.jpg
+ï¿½       ï¿½       ï¿½       ic_launcher_background.xml
+ï¿½       ï¿½       ï¿½       ic_launcher_foreground.xml
+ï¿½       ï¿½       ï¿½       outline_group_24.xml
+ï¿½       ï¿½       ï¿½       outline_photo_24.xml
+ï¿½       ï¿½       ï¿½       outline_qr_code_24.xml
+ï¿½       ï¿½       ï¿½       outline_qr_code_scanner_24.xml
+ï¿½       ï¿½       ï¿½       
+ï¿½       ï¿½       ï¿½ï¿½ï¿½ï¿½mipmap-anydpi-v26
+ï¿½       ï¿½       ï¿½       ic_launcher.xml
+ï¿½       ï¿½       ï¿½       ic_launcher_round.xml
+ï¿½       ï¿½       ï¿½       
+ï¿½       ï¿½       ï¿½ï¿½ï¿½ï¿½mipmap-hdpi
+ï¿½       ï¿½       ï¿½       ic_launcher.webp
+ï¿½       ï¿½       ï¿½       ic_launcher_round.webp
+ï¿½       ï¿½       ï¿½       
+ï¿½       ï¿½       ï¿½ï¿½ï¿½ï¿½mipmap-mdpi
+ï¿½       ï¿½       ï¿½       ic_launcher.webp
+ï¿½       ï¿½       ï¿½       ic_launcher_round.webp
+ï¿½       ï¿½       ï¿½       
+ï¿½       ï¿½       ï¿½ï¿½ï¿½ï¿½mipmap-xhdpi
+ï¿½       ï¿½       ï¿½       ic_launcher.webp
+ï¿½       ï¿½       ï¿½       ic_launcher_round.webp
+ï¿½       ï¿½       ï¿½       
+ï¿½       ï¿½       ï¿½ï¿½ï¿½ï¿½mipmap-xxhdpi
+ï¿½       ï¿½       ï¿½       ic_launcher.webp
+ï¿½       ï¿½       ï¿½       ic_launcher_round.webp
+ï¿½       ï¿½       ï¿½       
+ï¿½       ï¿½       ï¿½ï¿½ï¿½ï¿½mipmap-xxxhdpi
+ï¿½       ï¿½       ï¿½       ic_launcher.webp
+ï¿½       ï¿½       ï¿½       ic_launcher_round.webp
+ï¿½       ï¿½       ï¿½       
+ï¿½       ï¿½       ï¿½ï¿½ï¿½ï¿½values
+ï¿½       ï¿½       ï¿½       colors.xml
+ï¿½       ï¿½       ï¿½       strings.xml
+ï¿½       ï¿½       ï¿½       themes.xml
+ï¿½       ï¿½       ï¿½       
+ï¿½       ï¿½       ï¿½ï¿½ï¿½ï¿½xml
+ï¿½       ï¿½               backup_rules.xml
+ï¿½       ï¿½               data_extraction_rules.xml
+ï¿½       ï¿½               
+ï¿½       ï¿½ï¿½ï¿½ï¿½test
+ï¿½           ï¿½ï¿½ï¿½ï¿½java
+ï¿½               ï¿½ï¿½ï¿½ï¿½com
+ï¿½                   ï¿½ï¿½ï¿½ï¿½example
+ï¿½                       ï¿½ï¿½ï¿½ï¿½treasurely
+ï¿½                               ExampleUnitTest.kt
+ï¿½                               
+ï¿½ï¿½ï¿½ï¿½gradle
+    ï¿½   libs.versions.toml
+    ï¿½   
+    ï¿½ï¿½ï¿½ï¿½wrapper
             gradle-wrapper.jar
             gradle-wrapper.properties
             
