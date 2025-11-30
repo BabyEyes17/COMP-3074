@@ -19,6 +19,8 @@ class PoiRepository(private  val dao: PoiDao) {
 
     fun getPoiByName(name: String) = dao.getPoiByName(name)
 
+    fun searchByNameOrTag(q: String) = dao.searchByNameOrTag(q)
+
 
 
     /* PUT */
