@@ -7,8 +7,8 @@ import java.util.UUID
 @Entity(tableName = "points_of_interest")
 data class PointOfInterest(
 
-    @PrimaryKey(autoGenerate = true)
-    val id: UUID,
+    @PrimaryKey
+    val id: String = UUID.randomUUID().toString(),
 
     val name: String,
     val address: String,
