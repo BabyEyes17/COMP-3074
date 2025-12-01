@@ -21,7 +21,7 @@ fun TreasurelyApp() {
 
     val bottomItems = listOf(
         BottomNavItem.Home,
-        BottomNavItem.Create,
+        BottomNavItem.Users,
         BottomNavItem.Scan,
         BottomNavItem.About
     )

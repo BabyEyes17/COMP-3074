@@ -24,6 +24,7 @@ import ca.gbc.treasurely.ui.poi.crud.PoiCrudViewModel
 import ca.gbc.treasurely.ui.poi.details.PoiDetailsScreen
 import ca.gbc.treasurely.ui.poi.qr.QrCodeScannerScreen
 import ca.gbc.treasurely.ui.splash.SplashScreen
+import ca.gbc.treasurely.ui.user.UserListScreen
 
 @Composable
 fun AppNavHost(navController: NavHostController, paddingValues: PaddingValues) {
@@ -128,6 +129,18 @@ fun AppNavHost(navController: NavHostController, paddingValues: PaddingValues) {
         /* ABOUT */
         composable(Screen.About.route) {
             AboutScreen()
+        }
+
+        composable(Screen.UserList.route) {
+            UserListScreen(
+                viewModel = sharedViewModel(),
+                onEditUser = { userId ->
+                    navController.navigate("edit_user/$userId")
+                },
+                onAddUser = {
+                    navController.navigate("add_user")
+                }
+            )
         }
     }
 }

@@ -11,7 +11,7 @@ class UserListViewModel(
     private val repo: UserRepository
 ) : ViewModel() {
 
-    val users: LiveData<List<User>> = repo.getAllUsers()
+    val users = repo.getAllUsers()
 
     fun deleteUser(user: User) {
         viewModelScope.launch {
@@ -19,3 +19,4 @@ class UserListViewModel(
         }
     }
 }
+

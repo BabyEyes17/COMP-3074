@@ -9,6 +9,8 @@ sealed class Screen(val route: String) {
 
     object PoiList : Screen("poi_list")
 
+    object UserList : Screen("user_list")
+
     object CreatePoi : Screen("create_poi")
 
     object EditPoi : Screen("edit_poi/{poiId}") {
@@ -45,7 +47,6 @@ sealed class Screen(val route: String) {
         fun route(id: String) = "fullscreen_map/$id"
     }
 
-    object UserList : Screen("user_list")
     object AddUser : Screen("add_user")
 
     object EditUser : Screen("edit_user/{userId}") {
