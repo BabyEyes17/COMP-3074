@@ -14,7 +14,10 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            TreasurelyApp()
+            TreasurelyTheme {
+                TreasurelyApp()
+            }
         }
+
     }
 }

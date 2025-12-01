@@ -1,20 +1,11 @@
 package ca.gbc.treasurely.ui.poi.crud
 
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.FloatingActionButton
-import androidx.compose.material3.IconButton
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.material3.TopAppBar
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
 import androidx.compose.runtime.livedata.observeAsState
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.rememberCoroutineScope
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import ca.gbc.treasurely.ui.common.LoadingView
 import ca.gbc.treasurely.ui.common.PoiForm
 import kotlinx.coroutines.launch
@@ -45,27 +36,47 @@ fun EditPoiScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Edit POI") },
-                navigationIcon = { IconButton(onClick = onBack) { Text("←") } }
+                title = {
+                    Text(
+                        "Edit POI",
+                        color = MaterialTheme.colorScheme.onPrimary,
+                        style = MaterialTheme.typography.titleLarge
+                    )
+                },
+                navigationIcon = {
+                    IconButton(onClick = onBack) {
+                        Text("←", color = MaterialTheme.colorScheme.onPrimary)
+                    }
+                },
+                colors = TopAppBarDefaults.topAppBarColors(
+                    containerColor = MaterialTheme.colorScheme.primary
+                )
             )
         },
         floatingActionButton = {
-            FloatingActionButton(onClick = {
-                scope.launch {
-                    viewModel.updatePoi(
-                        poi!!.copy(
-                            name = name,
-                            address = address,
-                            task = task,
-                            tags = tags.split(",").map { it.trim() },
-                            latitude = latitude.toDouble(),
-                            longitude = longitude.toDouble()
+            FloatingActionButton(
+                onClick = {
+                    scope.launch {
+                        viewModel.updatePoi(
+                            poi!!.copy(
+                                name = name,
+                                address = address,
+                                task = task,
+                                tags = tags.split(",").map { it.trim() },
+                                latitude = latitude.toDouble(),
+                                longitude = longitude.toDouble()
+                            )
                         )
-                    )
-                    onUpdated()
-                }
-            }) {
-                Text("Save")
+                        onUpdated()
+                    }
+                },
+                containerColor = MaterialTheme.colorScheme.secondary,
+                contentColor = MaterialTheme.colorScheme.onSecondary
+            ) {
+                Text(
+                    "Save",
+                    style = MaterialTheme.typography.titleMedium
+                )
             }
         }
     ) { padding ->

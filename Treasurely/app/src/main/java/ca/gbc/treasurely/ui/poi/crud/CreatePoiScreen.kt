@@ -5,10 +5,13 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.unit.dp
 import ca.gbc.treasurely.ui.common.LoadingView
 import ca.gbc.treasurely.ui.common.PoiForm
 import kotlinx.coroutines.launch
 import ca.gbc.treasurely.data.model.PointOfInterest
+import ca.gbc.treasurely.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -32,28 +35,48 @@ fun CreatePoiScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Create POI") },
-                navigationIcon = { IconButton(onClick = onBack) { Text("←") } }
+                title = {
+                    Text(
+                        "Create POI",
+                        color = MaterialTheme.colorScheme.onPrimary,
+                        style = MaterialTheme.typography.titleLarge
+                    )
+                },
+                navigationIcon = {
+                    IconButton(onClick = onBack) {
+                        Text("←", color = MaterialTheme.colorScheme.onPrimary)
+                    }
+                },
+                colors = TopAppBarDefaults.topAppBarColors(
+                    containerColor = MaterialTheme.colorScheme.primary
+                )
             )
         },
         floatingActionButton = {
-            FloatingActionButton(onClick = {
-                scope.launch {
-                    viewModel.createPoi(
-                        PointOfInterest(
-                            name = name,
-                            address = address,
-                            task = task,
-                            tags = tags.split(",").map { it.trim() },
-                            latitude = latitude.toDoubleOrNull() ?: 0.0,
-                            longitude = longitude.toDoubleOrNull() ?: 0.0,
-                            qrCodeValue = name.lowercase() + "-qr"
+            FloatingActionButton(
+                onClick = {
+                    scope.launch {
+                        viewModel.createPoi(
+                            PointOfInterest(
+                                name = name,
+                                address = address,
+                                task = task,
+                                tags = tags.split(",").map { it.trim() },
+                                latitude = latitude.toDoubleOrNull() ?: 0.0,
+                                longitude = longitude.toDoubleOrNull() ?: 0.0,
+                                qrCodeValue = name.lowercase() + "-qr"
+                            )
                         )
-                    )
-                    onCreated()
-                }
-            }) {
-                Text("Save")
+                        onCreated()
+                    }
+                },
+                containerColor = MaterialTheme.colorScheme.secondary,
+                contentColor = MaterialTheme.colorScheme.onSecondary
+            ) {
+                Text(
+                    "Save",
+                    style = MaterialTheme.typography.titleMedium
+                )
             }
         }
     ) { padding ->

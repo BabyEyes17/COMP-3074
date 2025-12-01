@@ -61,4 +61,12 @@ class PoiCrudViewModel : ViewModel() {
     fun clearScannerResult() {
         _scannerResult.value = null
     }
+
+    fun updateRating(poi: PointOfInterest, newRating: Int) {
+        viewModelScope.launch {
+            val updated = poi.copy(rating = newRating)
+            repo?.updatePoi(updated)
+        }
+    }
+
 }

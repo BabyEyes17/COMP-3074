@@ -2,6 +2,7 @@ package ca.gbc.treasurely.ui.poi.details
 
 import android.graphics.Bitmap
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -9,9 +10,10 @@ import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.unit.dp
 import androidx.compose.ui.graphics.asImageBitmap
+import androidx.compose.ui.unit.dp
 import ca.gbc.treasurely.ui.common.LoadingView
+import ca.gbc.treasurely.ui.common.StarRating
 import ca.gbc.treasurely.ui.poi.crud.PoiCrudViewModel
 import ca.gbc.treasurely.utils.generateQrCode
 import ca.gbc.treasurely.utils.saveQrToGallery
@@ -33,7 +35,6 @@ fun PoiDetailsScreen(
 
     val context = LocalContext.current
 
-    // Generate QR code ONCE
     val qrBitmap: Bitmap = remember(poiId) {
         generateQrCode(poiId)
     }
@@ -41,48 +42,136 @@ fun PoiDetailsScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(poi!!.name) },
+                title = {
+                    Text(
+                        poi!!.name,
+                        color = MaterialTheme.colorScheme.onPrimary,
+                        style = MaterialTheme.typography.titleLarge
+                    )
+                },
                 navigationIcon = {
-                    IconButton(onClick = onBack) { Text("←") }
+                    IconButton(onClick = onBack) {
+                        Text("←", color = MaterialTheme.colorScheme.onPrimary)
+                    }
                 },
                 actions = {
-                    IconButton(onClick = { onEdit(poiId) }) { Text("Edit") }
-                    IconButton(onClick = { onDelete(poiId) }) { Text("Del") }
-                }
+                    IconButton(onClick = { onEdit(poiId) }) {
+                        Text("Edit", color = MaterialTheme.colorScheme.onPrimary)
+                    }
+                    IconButton(onClick = { onDelete(poiId) }) {
+                        Text("Del", color = MaterialTheme.colorScheme.onPrimary)
+                    }
+                },
+                colors = TopAppBarDefaults.topAppBarColors(
+                    containerColor = MaterialTheme.colorScheme.primary
+                )
             )
         }
     ) { padding ->
         Column(
-            modifier = Modifier.padding(padding).padding(16.dp),
-            verticalArrangement = Arrangement.spacedBy(12.dp),
+            modifier = Modifier
+                .padding(padding)
+                .padding(16.dp)
+                .fillMaxSize(),
+            verticalArrangement = Arrangement.spacedBy(20.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-
-            Text("Address: ${poi!!.address}")
-            Text("Task: ${poi!!.task}")
-            Text("Tags: ${poi!!.tags.joinToString(" • ")}")
-            Text("Lat: ${poi!!.latitude}")
-            Text("Lng: ${poi!!.longitude}")
-
-            Spacer(Modifier.height(20.dp))
-
-            /* QR CODE DISPLAY */
-            Image(
-                bitmap = qrBitmap.asImageBitmap(),
-                contentDescription = "QR Code for ${poi!!.name}",
-                modifier = Modifier.size(220.dp)
-            )
-
-            Text("Scan this QR code to open this POI", style = MaterialTheme.typography.bodyMedium)
-
-            Spacer(Modifier.height(12.dp))
-
-            Button(
-                onClick = {
-                    saveQrToGallery(context, qrBitmap, poi!!.name)
-                }
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                colors = CardDefaults.cardColors(
+                    containerColor = MaterialTheme.colorScheme.surface
+                ),
+                elevation = CardDefaults.cardElevation(defaultElevation = 3.dp),
+                shape = MaterialTheme.shapes.medium
             ) {
-                Text("Download QR Code")
+                Column(Modifier.padding(16.dp)) {
+                    Text(
+                        "Information",
+                        style = MaterialTheme.typography.titleMedium,
+                        color = MaterialTheme.colorScheme.primary
+                    )
+                    Spacer(Modifier.height(12.dp))
+                    Text("Address: ${poi!!.address}", style = MaterialTheme.typography.bodyMedium)
+                    Text("Task: ${poi!!.task}", style = MaterialTheme.typography.bodyMedium)
+                    Text(
+                        "Tags: ${poi!!.tags.joinToString(" • ")}",
+                        style = MaterialTheme.typography.bodyMedium
+                    )
+                    Text("Lat: ${poi!!.latitude}", style = MaterialTheme.typography.bodySmall)
+                    Text("Lng: ${poi!!.longitude}", style = MaterialTheme.typography.bodySmall)
+                }
+            }
+
+            var currentRating by remember { mutableStateOf(poi!!.rating ?: 0) }
+
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                colors = CardDefaults.cardColors(
+                    containerColor = MaterialTheme.colorScheme.surface
+                ),
+                elevation = CardDefaults.cardElevation(defaultElevation = 3.dp),
+                shape = MaterialTheme.shapes.medium
+            ) {
+                Column(
+                    Modifier
+                        .padding(16.dp)
+                        .fillMaxWidth(),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                    Text(
+                        "Your Rating",
+                        style = MaterialTheme.typography.titleMedium,
+                        color = MaterialTheme.colorScheme.primary
+                    )
+                    Spacer(Modifier.height(8.dp))
+                    StarRating(
+                        rating = currentRating,
+                        onRatingSelected = { new ->
+                            currentRating = new
+                            viewModel.updateRating(poi!!, new)
+                        }
+                    )
+                }
+            }
+
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                colors = CardDefaults.cardColors(
+                    containerColor = MaterialTheme.colorScheme.surface
+                ),
+                elevation = CardDefaults.cardElevation(defaultElevation = 3.dp),
+                shape = MaterialTheme.shapes.medium
+            ) {
+                Column(
+                    Modifier
+                        .padding(16.dp)
+                        .fillMaxWidth(),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                    Image(
+                        bitmap = qrBitmap.asImageBitmap(),
+                        contentDescription = null,
+                        modifier = Modifier.size(220.dp)
+                    )
+                    Spacer(Modifier.height(8.dp))
+                    Text(
+                        "Scan this QR code to open this POI",
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                    Spacer(Modifier.height(16.dp))
+                    Button(
+                        onClick = {
+                            saveQrToGallery(context, qrBitmap, poi!!.name)
+                        },
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = MaterialTheme.colorScheme.secondary,
+                            contentColor = MaterialTheme.colorScheme.onSecondary
+                        )
+                    ) {
+                        Text("Download QR Code")
+                    }
+                }
             }
         }
     }
